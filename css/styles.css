@@ -124,7 +124,7 @@ body[data-page="inicio"] .nav-menu li:first-child {
 /* CONTENEDOR INDEX */
 .container{
     background-color: burlywood;
-    height: 1500px;
+    height: 600px;/* de prueba nada mas */
     grid-area: main;
 }
  /* FOOTER */
