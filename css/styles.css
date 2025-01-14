@@ -1,11 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Quicksand:wght@400;500&family=Righteous&display=swap);
 
-/* clases para las fuentes*/
-.righteous-regular {
-    font-family: "Righteous", serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 * {
     box-sizing: border-box;
@@ -13,25 +7,55 @@
     padding: 0;
 }
 
-.header {
+
+h1 {
+    font-size: 1.6em; /* Tamaño de fuente titulo */
+    font-family: 'Righteous', sans-serif;
+    font-weight: normal; /* Asegura que no se aplique un peso adicional */
+    color: #ffffff;
+}
+
+/* Encabezados h2 a h6 */
+h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif; /* Fuente específica */
+    font-weight: 500; /* Peso para mayor legibilidad */
+    color: white;
+    margin: 0.5em 0;
+}
+
+/* Párrafos */
+p {
+    font-family: 'Montserrat', sans-serif; /* Fuente específica */
+    line-height: 1.5; /* Mejora la legibilidad */
+    color: white;
+}
+
+
+a {
+    font-family: 'Montserrat', sans-serif; /* Fuente específica */
+    text-decoration: none;
+    color: #5fad00;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+.header{
     background-color: #002a6e;
     height: 4em;
-    width: 100%;
+    width: 100vw;
     display: flex;
     grid-area: header;
 }
+.header-titulo{
+    
+    font-family: 'Righteous', sans-serif; /* Fuente específica y Sans-serif por default */
 
-.header-titulo {
-
-    font-family: 'Righteous', sans-serif;
-    /* Fuente específica y Sans-serif por default */
-    font-size: 1.3em;
-
-    letter-spacing: 0.05em;
-    /* Espaciado entre letras */
+    letter-spacing: 0.05em; /* Espaciado entre letras */
     color: white;
-    text-transform: uppercase;
-    /* Mayúsculas */
+    text-transform: uppercase; /* Mayúsculas */
     /*margin: 0.5em 1em;*/
     order: 2;
     flex: 8;
@@ -39,16 +63,12 @@
     align-items: center;
     justify-content: center;
 }
-
-.menu {
-    order: 3;
+.menu{
     color: white;
     flex: 3;
-    display: none;
-    /* Oculto por defecto en móviles */
+    display: none; /* Oculto por defecto en móviles */
 }
-
-.header-logo {
+.header-logo{
     order: 1;
     flex: 1;
     display: flex;
@@ -56,15 +76,13 @@
     justify-content: center;
     margin: 0.5em;
 }
-
-.logo-header {
+.logo-header{
     object-fit: cover;
     max-height: 100%;
     /* height: 4em; */
     width: auto;
 }
-
-.nav-toggle {
+.header-menu-icono {
     display: flex;
     background: none;
     border: none;
@@ -74,64 +92,81 @@
     flex: 1;
     justify-content: center;
     align-items: center;
+    color: white;
+}
 
+/* Ocultar el enlace "Inicio" cuando el atributo data-page es "inicio" */
+body[data-page="inicio"] .nav-menu li:first-child {
+    display: none;
 }
 
 
-.grid-container {
+.grid-container{
     background-color: aqua;
     display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer"
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
     ;
-    grid-template-rows: auto 1fr auto;
-    /* Filas dinámicas */
-    min-height: 100vh;
-    /* Ocupa toda la altura de la pantalla */
+    grid-template-rows: auto 1fr auto; /* Filas dinámicas */
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
 }
 
-.body {
+.body{
     font-size: 1em;
     height: 100%;
 }
 
-.html {
+.html{
     height: 100%;
 }
-
-.container {
+/* CONTENEDOR INDEX */
+.container{
     background-color: burlywood;
+    height: 1500px;
     grid-area: main;
 }
-
+ /* FOOTER */
 .footer {
     background-color: #002a6e;
-    color: #fff;
-    /* Texto blanco */
+    color: #fff; /* Texto blanco */
     display: grid;
-    grid-template-areas:
+    grid-template-areas: 
         "contenido-footer"
         "footer-sur"
-    ;
+        ;
     grid-template-rows: auto auto;
 }
-
 .contenido-footer {
     grid-area: contenido-footer;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    /* Responsivo: mínimo 300px por columna */
-    gap: 1.5em;
-    padding: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsivo: mínimo 300px por columna */
+    gap: 0em;
+    padding: 0.5em;
+}
+.footer a {
+    color: #00ccff;
+    text-decoration: none;
+    font-size: 0.9em;
 }
 
 .footer-gobierno {
+    object-fit: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.logo-mincult-mobile{
+    display: block;
+    max-width: 100%;
+    height: 7em;
+}
+.logo-mincult-desktop{
+    display: none;
 }
 
 .footer-redesociales {
@@ -140,8 +175,7 @@
     align-items: center;
     text-align: center;
 }
-
-.iconos-redesociales {
+.iconos-redesociales{
     display: flex;
     gap: 1em;
     justify-content: center;
@@ -150,163 +184,179 @@
     padding: 0;
 }
 
-.iconos-redesociales a {
-    color: #ffffff;
-    /* Color inicial de los iconos */
-    font-size: 2rem;
-    /* Tamaño de los iconos */
-    text-decoration: none;
-}
-
 .footer-redesociales h2 {
     margin-bottom: 1em;
+    text-transform: uppercase;
 }
 
-.footer-redesociales a {
-    margin: 0.2em;
+.iconos-redesociales a{
+    color: #ffffff; /* Color inicial de los iconos */
+    font-size: 2rem; /* Tamaño de los iconos */
     text-decoration: none;
+    margin: 0.2em;
 }
+
 
 .footer-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: grid; /* Activa el grid */
+    grid-template-columns: 1fr 1px 3fr; /* Divide en dos columnas, 1 parte para el logo y 3 para el texto */
+    gap: 1em; /* Espaciado entre columnas */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 1em;
 }
 
-.footer-contacto a {
-    color: #00bcd4;
-    text-decoration: none;
+.linea-divisora {
+    background-color: #ccc; /* Color de la línea */
+    width: 1px; /* Grosor de la línea */
+    height: 100%; /* Hace que la línea ocupe toda la altura del contenedor */
+}
+.logo-footer{
+    object-fit: cover;
+    height: 7em;
 }
 
 .footer-sur {
     grid-area: footer-sur;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     gap: 0.3em;
-    background-color: #001c4a;
-    /* Ajustado según diseño */
+    background-color: #001c4a; /* Ajustado según diseño */
     padding: 0.5em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    /* Responsivo: mínimo 300px por columna */
-
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsivo: mínimo 300px por columna */
+    
 }
 
 .footer-sur-item {
     display: flex;
+    align-items: center;
+    text-align: center;
     justify-content: center;
     gap: 1em;
 }
 
 .btn-volver {
-    background-color: #00bcd4;
-    color: white;
+    background-color: #004aad;   
     border: none;
-    padding: 0.5em 1em;
+    padding: 0.5em 1.5em;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 0.9em;
+    font-size: 1em;
+    a{
+        color: white;
+    }
 }
-
-.enlace-footer {
-    color: #00bcd4;
-    text-decoration: none;
-    font-size: 0.9em;
+.btn-volver:hover {
+    background-color: #002a6e;
 }
-
-.enlace-footer:hover {
-    text-decoration: underline;
-}
-
 
 /* Tabletas (mínimo 768px) */
-@media (min-width: 768px) {
-    
+/* @media (min-width: 768px) {
+
 }
-
-
-
-
+ */
 /* Laptops y escritorios (mínimo 992px) */
 @media (min-width: 992px) {
 
-    .header {
+    .header{
         height: 10em;
         width: 100%;
         display: grid;
         grid-area: header;
-        grid-template-areas:
-            "titulo logo"
-            "navbar logo"
+        grid-template-areas: 
+        "titulo logo"
+        "navbar logo"
         ;
         grid-template-columns: 8fr 2fr;
     }
-
-    .header-titulo {
+    
+    .header-titulo{
         grid-area: titulo;
-        font-family: 'Righteous', sans-serif;
-        /* Fuente específica y Sans-serif por default */
-        font-size: 4em;
+        font-family: 'Righteous', sans-serif; /* Fuente específica y Sans-serif por default */
+        font-size: 2.5em;
 
-
-        letter-spacing: 0.05em;
-        /* Espaciado entre letras */
+        
+        letter-spacing: 0.05em; /* Espaciado entre letras */
         color: white;
-        text-transform: uppercase;
-        /* Mayúsculas */
+        text-transform: uppercase; /* Mayúsculas */
         /*margin: 0.5em 1em;*/
         display: flex;
         align-items: center;
         justify-content: start;
         padding: 0em 1em;
     }
-
-    .menu {
+    .menu{
         grid-area: navbar;
-        display: flex;
-        /* Oculto por defecto en móviles */
+        display: flex; /* Oculto por defecto en móviles */
     }
-
-    .nav-menu {
-        list-style: none;
-        /* Quita los puntos de lista */
+    
+    .nav-menu{
+        list-style: none; /* Quita los puntos de lista */
         margin: 0;
         padding: 0;
-        display: flex;
-        /* Activa flexbox */
-        align-items: center;
-        /* Centra verticalmente */
+        display: flex; /* Activa flexbox */
+        align-items: center; /* Centra verticalmente */
         gap: 1.5em;
         padding: 0em 2em;
-        width: 100%;
-        /* Asegura que ocupe todo el ancho del contenedor */
+        width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
     }
-
-    .nav-menu a {
+    .nav-menu a{
         color: white;
         text-decoration: none;
+        font-size: 1em; /* 16px equivalente */
+        padding: 0.5em 0.75em;
+        border-radius: 0.3em;
+    }   
+
+    .nav-menu a:hover {
+        background-color: #004aad;
     }
 
-    .header-logo {
+    .header-logo{
         grid-area: logo;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0em;
     }
-
-    .logo-header {
+    .logo-header{
         object-fit: cover;
         max-height: 100%;
         height: 8em;
         width: auto;
     }
-
-    .nav-toggle {
+    .header-menu-icono {
         display: none;
     }
+    .logo-mincult-mobile{
+        display: none;
+    }
+    .logo-mincult-desktop{
+        display: block;
+        max-width: 100%;
+        height: 7em;
+    }
 
-}
+    .container-inicio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        padding: 1em;
+        grid-template-areas: 
+            "noticias calendario"
+        ;
+    }
 
+    .contenedor-patrocinadores{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1em;
+        padding: 1em;
+    }
+    .logo-patroc{
+        background-image: url(../imagenes/logo-company.jpg);
+        object-fit: cover;
+        width: 8em;
+        height: auto;
+    }
+
+}   
