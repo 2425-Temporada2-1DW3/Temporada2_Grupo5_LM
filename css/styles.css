@@ -95,12 +95,6 @@ a:hover {
     color: white;
 }
 
-/* Ocultar el enlace "Inicio" cuando el atributo data-page es "inicio" */
-body[data-page="inicio"] .nav-menu li:first-child {
-    display: none;
-}
-
-
 .grid-container{
     background-color: aqua;
     display: grid;
@@ -124,7 +118,7 @@ body[data-page="inicio"] .nav-menu li:first-child {
 /* CONTENEDOR INDEX */
 .container{
     background-color: burlywood;
-    height: 600px;/* de prueba nada mas */
+    height: 1000px;/* de prueba nada mas */
     grid-area: main;
 }
  /* FOOTER */
