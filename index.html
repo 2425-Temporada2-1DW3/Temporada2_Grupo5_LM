@@ -14,26 +14,26 @@
 
 <body class="grid-container">
 
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="header-titulo">
-            <h4>Federacion Voleibol</h4>
+            <h1>Federación Voleibol</h1>
         </div>
 
-        <button class="nav-toggle" aria-label="Abrir menú">
+        <button class="header-menu-icono" aria-label="Abrir menú">
             <i class="fas fa-bars"></i>
         </button>
-        <nav class="menu">
+        <nav class="menu" id="menu">
             <ul class="nav-menu">
-                <li><a href="#" class="load-content" data-url="clasificacion.html">Clasificación</a></li>
-                <li><a href="#" class="load-content" data-url="equipos.html">Equipos</a></li>
-                <li><a href="#" class="load-content" data-url="temporadas.html">Temporadas</a></li>
-                <li><a href="#" class="load-content" data-url="contacto.html">Contacto</a></li>
+                <li><a href="#" class="load-content" class="menu-enlaces" data-url="inicio.html">Inicio</a></li>
+                <li><a href="#" class="load-content" class="menu-enlaces" data-url="clasificacion.html">Clasificación</a></li>
+                <li><a href="#" class="load-content" class="menu-enlaces" data-url="equipos.html">Equipos</a></li>
+                <li><a href="#" class="load-content" class="menu-enlaces" data-url="temporadas.html">Temporadas</a></li>
+                <li><a href="#" class="load-content" class="menu-enlaces" data-url="contacto.html">Contacto</a></li>
             </ul>
 
         </nav>
-
         <div class="header-logo">
-            <img src="./imagenes/logo-grey.png" alt="Logo Federación Voleibol" class="logo-header">
+            <img src="./imagenes/logo.png" alt="Logo Federación Voleibol" class="logo-header">
         </div>
     </header>
 
@@ -48,33 +48,38 @@
         <div class="contenido-footer">
             <!-- Información general -->
             <div class="footer-gobierno">
-                <img src="./imagenes/logomincult.svg" alt="Gobierno Logo" class="gobierno-logo">
-
+                <a href="https://www.cultura.gob.es/" target="_blank">
+                    <img src="./imagenes/logomincult-desktop.svg" alt="Gobierno Logo" class="logo-mincult-desktop">
+                    <img src="./imagenes/logomincult-mobile.png" alt="Gobierno Logo" class="logo-mincult-mobile">
+                </a>
+                
             </div>
 
             <!-- Redes Sociales -->
             <div class="footer-redesociales">
                 <h2>Redes Sociales</h2>
                 <div class="iconos-redesociales">
-                    <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><i
-                                class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
-                                class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://youtube.com" target="_blank" aria-label="YouTube"><i
-                                class="fab fa-youtube"></i></a></li>
-                    <li><a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i
-                                class="fab fa-tiktok"></i></a></li>
-                    <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
-                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
                 </div>
             </div>
             <!-- Detalles de contacto -->
             <div class="footer-contacto">
-                <img src="./imagenes/logo-footer.png" alt="Logo Federación Voleibol" class="logo-footer">
-                <p>Dirección: Avenida de Mikel, 13 3ªA 28004 - Madrid</p>
-                <p>Teléfono: (+34) 917 013 170</p>
-                <p>Fax: (+34) 912 126 332</p>
-                <p>Email: <a href="mailto:info@fdv.gov">info@fdv.gov</a></p>
+                <div class="logo-footer-info">
+                    <a href="./index.html">
+                    <img src="./imagenes/logo.png" alt="Logo Federación Voleibol" class="logo-footer">
+                    </a>
+                </div>
+                <div class="linea-divisora"></div>
+                <div class="info-footer">
+                    <p>Dirección: Avenida de Mikel, 13 3ªA 28004 - Madrid</p>
+                    <p>Teléfono: (+34) 917 013 170</p>
+                    <p>Fax: (+34) 912 126 332</p>
+                    <p>Email: <a href="mailto:info@fdv.gov">info@fdv.gov</a></p>
+                </div>
             </div>
 
         </div>
@@ -82,8 +87,10 @@
         <div class="footer-sur">
             <!-- Botón a la izquierda -->
             <div class="footer-sur-item">
-                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="btn-volver">Volver al
-                    inicio</button>
+                <!-- Botón para subir al inicio de la página -->
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="btn-volver"> 
+                    <a href="#inicio">Volver al inicio</a>
+                </button>
             </div>
 
             <!-- Texto de copyright al centro -->
