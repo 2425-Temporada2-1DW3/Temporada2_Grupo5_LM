@@ -1,0 +1,95 @@
+
+#temporadas {
+    width: 100%;
+}
+
+/* Estilo general de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-top: 1em;
+    text-align: center;
+    border: 3px solid #3C6AA3;
+    border-top-right-radius: 15px;
+    margin-bottom: 1em;
+}
+
+/* Encabezado */
+th {
+    background-color: #1A408D;
+    color: white;
+    padding: 0.3em;
+    font-size: 1.2em;
+}
+
+/* Filas */
+tr {
+    background-color: #1A408D;
+    color: white;
+    font-size: 1em;
+}
+
+tr:hover {
+    background-color: #163C79;
+}
+
+/* Celdas */
+td {
+    padding: 0.8em;
+    border: 3px solid #3C6AA3;
+}
+
+/* Logo */
+.logoEquipo {
+    width: auto;
+    height: 3em;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #fff;
+    padding: 0.1em;
+}
+
+/* Estilo del título de clasificación */
+#clasificacionTitulo {
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1A408D;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#clasificacionTitulo h2 {
+    font-size: 3em;
+    color: white;
+    margin: 0;
+    padding-right: 1%;
+}
+
+/* Contenedor de clasificación */
+#clasificacion {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+    margin-left: 10em;
+}
+
+/* Clasificación individuales */
+.noticia {
+    display: flex;
+    width: 100%;
+}
+
+.imagenNoticia {
+    height: 18em;
+    width: auto;
+    border: 3px solid #3C6AA3;
+    border-radius: 10px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+}

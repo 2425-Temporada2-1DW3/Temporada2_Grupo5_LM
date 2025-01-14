@@ -1,4 +1,41 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Quicksand:wght@400;500&family=Righteous&display=swap);
+:root {
+    --bgColor1: #1A408D;
+    --bgColor2: #122c61;
+    --txtColor: white;   /*Color de texto usado en Titulos*/
+    --txtColor2:#dcdcdc; /*Color de texto usado en contenido*/ 
+    --highlight:#37A0BB;
+
+}
+
+
+/* se usa para crear los titulos del contenido*/
+.titulo {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.tituloLeft {
+    padding-left: 1%;
+    background-color: #1A408D;
+    color: white;
+    font-size: 3em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.tituloRight {
+    padding-right: 1%;
+    background-color: #1A408D;
+    color: white;
+    font-size: 3em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
 
 /* clases para las fuentes*/
 .righteous-regular {
