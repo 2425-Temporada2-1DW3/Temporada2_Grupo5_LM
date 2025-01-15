@@ -11,22 +11,11 @@ table tr td{
         font-size: larger;
     
 }
-#titulo {
-    margin-top: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+#tituloNoticias{
+    display: none;
 }
-
-#titulo h1 {
-    padding-left: 1%;
-    background-color: #1A408D;
-    color: white;
-    width: 95%;
-    font-size: 3em;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+#tituloClasificacion{
+    width: 90%;
 }
 
 #clasificacion {
@@ -37,40 +26,38 @@ table tr td{
 table {
     width: 100%;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
     margin-top: 1em;
     text-align: center;
-    border: 3px solid #3C6AA3;
-    border-top-right-radius: 15px;
-    margin-bottom: 1em;
+    border: 3px solid var(--highlight);
+    margin: 1em 0;
 }
+
 
 /* Encabezado */
 th {
-    background-color: #1A408D;
-    color: white;
+    background-color: var(--bgcolor1);
+    border: 3px solid var(--highlight);
+    color: var(--txtColor1);
     padding: 0.3em;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 /* Filas */
 tr {
-    background-color: #1A408D;
-    color: white;
+    background-color: var(--bgColor1);
+    color: var(--txtColor1);
     font-size: 1em;
-
 }
 
-
-
 tr:hover {
-    background-color: #163C79;
+    background-color: var(--bgColor2);
 }
 
 /* Celdas */
 td {
     padding: 0.8em;
-    border: 3px solid #3C6AA3;
+    border: 3px solid var(--highlight);
+    color: var(--txtColor2);
 }
 
 /* Logo */
@@ -107,21 +94,8 @@ td {
     border-bottom-right-radius: 20px;
 }
 
-/* Estilo del título de noticias */
-
-
-#noticiasTitulo h2 {
-    font-size: 3em;
-    color: white;
-    margin: 0;
-    padding-right: 1%;
-}
-
-
-
-
 /* Noticias individuales */
-.noticia, .imagenNoticia, #noticiasTitulo, #noticias {
+#noticias {
    display: none;
 }
 
@@ -136,6 +110,8 @@ td {
 
     #tituloNoticias{
         width: 30%;
+        display: inline;
+
     }
     #tituloClasificacion{
         width: 55%;
@@ -146,43 +122,8 @@ td {
     }
 
     /* Estilo general de la tabla */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 1em;
-        text-align: center;
-        border: 3px solid var(--highlight);
-        border-top-right-radius: 15px;
-    }
-
-    /* Encabezado */
-    th {
-        background-color: var(--bgcolor1);
-        color: var(--txtColor1);
-        padding: 0.3em;
-        font-size: 1.2em;
-    }
-
-    /* Filas */
-    tr {
-        background-color: var(--bgColor1);
-        color: var(--txtColor1);
-        font-size: 1em;
-
-    }
 
 
-
-    tr:hover {
-        background-color: var(--bgColor2);
-    }
-
-    /* Celdas */
-    td {
-        padding: 0.8em;
-        border: 3px solid var(--highlight);
-        color: var(--txtColor2);
-    }
 
     /* Logo */
 
@@ -202,12 +143,12 @@ td {
     #noticias {
         display: flex;
         flex-direction: column;
-        gap: 1em;
-        margin-top: 1em;
-        margin-left: 10em;
+        margin: 1em 2em;
+        
         width: auto;
-
+        margin-left: auto; /*Pone el contendeor en la derecha*/
     }
+    
 
 
     /* Noticias individuales */
@@ -218,9 +159,9 @@ td {
 
     .imagenNoticia {
         display: block;
-        height: 18em;
+        height: 19em;
         width: auto;
-        border: 3px solid #3C6AA3;
+        border: 4px solid var(--highlight);
         border-radius: 10px;
     }
 
