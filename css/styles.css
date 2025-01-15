@@ -6,6 +6,10 @@
     --txtColor: white;   /*Color de texto usado en Titulos*/
     --txtColor2:#dcdcdc; /*Color de texto usado en contenido*/ 
     --highlight:#37A0BB;
+    --highlight2: #00ccff;
+    --highlight3: #059c8f;
+
+    color: var(--txtColor2) /*Por defecto el texto tendra este color*/
 
 }
 
@@ -35,14 +39,13 @@
 }
 
 /* se usa para crear los titulos del contenido*/
-.titulo {
+.tituloContenido {
     margin-top: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-
 .tituloLeft {
     padding-left: 1%;
     background-color: var(--bgColor1);
@@ -61,29 +64,46 @@
     border-bottom-left-radius: 20px;
 }
 
-
-
-
+/*Clase para no poder selecionar texto*/
+.textoNoSelecionable{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+/*Quitar espaciados por defecto y ajustar tamaño*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+.body{
+    font-size: 1em;
+    height: 100%;
+}
 
-
+.html{
+    height: 100%;
+}
 
 a {
     text-decoration: none;
-    color: #5fad00;
-}
-.header-titulo{   
-    font-family: 'Righteous', sans-serif; /* Fuente específica y Sans-serif por default */
+    color:var(--highlight2) ;
 }
 a:hover {
-    text-decoration: underline;
+    color: var(--highlight);
+}
+a:visited {
+    color: var(--highlight3)
 }
 
-/* Header */
+
+/*
+██   ██ ███████  █████  ██████  ███████ ██████  
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+███████ █████   ███████ ██   ██ █████   ██████  
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+██   ██ ███████ ██   ██ ██████  ███████ ██   ██ 
+*/
 header{
     background-color:var(--bgColor1);
     height: 4em;
@@ -91,10 +111,11 @@ header{
     display: flex;
     grid-area: header;
     padding: 0.5em;
+    color: var(--txtColor); /*Aplica color blanco a todo el contenido de header*/
 }
+
 .headerTitulo{
-        letter-spacing: 0.05em; /* Espaciado entre letras */
-    color: white;
+    letter-spacing: 0.05em; /* Espaciado entre letras */
     text-transform: uppercase; /* Mayúsculas */
     margin: 0 0.5em;
     order: 2;
@@ -111,12 +132,13 @@ header{
     align-items: center;
     justify-content: center;
 }
+
 .headerLogo img{
     object-fit: cover;
     max-height: 100%;
-    /* height: 4em; */
     width: auto;
 }
+
 .navMenu_mobile {
     display: flex;
     background: none;
@@ -127,7 +149,6 @@ header{
     flex: 1;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 
 .grid-container{
@@ -141,24 +162,24 @@ header{
     min-height: 100vh; /* Ocupa toda la altura de la pantalla */
 }
 
-.body{
-    font-size: 1em;
-    height: 100%;
-}
 
-.html{
-    height: 100%;
-}
+
 /* CONTENEDOR INDEX */
 .container{
     background-color: var(--bgColor3);
-    height: 1000px;/* de prueba nada mas */
+    height: auto;
     grid-area: main;
 }
- /* FOOTER */
+
+ /*
+███████  ██████   ██████  ████████ ███████ ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+█████   ██    ██ ██    ██    ██    █████   ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+██       ██████   ██████     ██    ███████ ██   ██ 
+ */
 .footer {
     background-color: var(--bgColor1);
-    color: #fff; /* Texto blanco */
     display: grid;
     grid-template-areas: 
         "contenido-footer"
@@ -174,7 +195,6 @@ header{
     padding: 0.5em;
 }
 .footer a {
-    color: #00ccff;
     text-decoration: none;
     font-size: 0.9em;
 }
@@ -277,9 +297,18 @@ header{
 
 }
  */
+
+
 /* Laptops y escritorios (mínimo 992px) */
 @media (min-width: 992px) {
-    /*Muestra el texto de la version de PC*/
+    /*
+    ██   ██ ███████  █████  ██████  ███████ ██████  
+    ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+    ███████ █████   ███████ ██   ██ █████   ██████  
+    ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+    ██   ██ ███████ ██   ██ ██████  ███████ ██   ██ 
+    */
+
     .soloDesktop{
         display: inherit;
     }
@@ -297,6 +326,7 @@ header{
         "navbar logo"
         ;
         grid-template-columns: 8fr 2fr;
+
     }
     
     .headerTitulo{
@@ -353,6 +383,13 @@ header{
         width: auto;
     }
 
+    /*
+    ██   ██ ███████  █████  ██████  ███████ ██████  
+    ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+    ███████ █████   ███████ ██   ██ █████   ██████  
+    ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+    ██   ██ ███████ ██   ██ ██████  ███████ ██   ██ 
+    */
     .ministerioCultura_small{
         display: none;
     }
