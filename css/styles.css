@@ -253,9 +253,16 @@ header{
     width: 1px; /* Grosor de la línea */
     height: 100%; /* Hace que la línea ocupe toda la altura del contenedor */
 }
-.logo-footer{
-    object-fit: cover;
-    height: 7em;
+
+.logo-footer-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .logo-footer{
+        object-fit: cover;
+        height: 7em;
+    }
 }
 
 .footer-sur {
@@ -397,29 +404,6 @@ header{
         display: block;
         max-width: 100%;
         height: 7em;
-    }
-
-    .container-inicio{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1em;
-        padding: 1em;
-        grid-template-areas: 
-            "noticias calendario"
-        ;
-    }
-
-    .contenedor-patrocinadores{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 1em;
-        padding: 1em;
-    }
-    .logo-patroc{
-        background-image: url(../imagenes/logo-company.jpg);
-        object-fit: cover;
-        width: 8em;
-        height: auto;
     }
     .footer-redesociales h2 {
         margin-bottom: 1em;
