@@ -57,11 +57,6 @@
     display: grid;
     grid-area: noticias;
   }
-  .seccion-calendario{
-    display: grid;
-    grid-area: calendario;
-  }
-  
   .noticia-list {
     display: grid;
     grid-template-columns: 1fr; /* 1 columna */
@@ -70,7 +65,6 @@
     max-width: 650px;
     margin: 0 auto;
   }
-  
   .noticia {
     position: relative;
     width: 40em; /* El ancho ocupa todo el espacio del padre */
@@ -80,8 +74,6 @@
     background-position: center; /* Centra la imagen */
     overflow: hidden;
   }
-  
-  
   .noticia-info {
     position: absolute;
     display: flex;
@@ -94,13 +86,11 @@
     flex-direction: column;
     text-align: left;
   }
-  
   .subtitle {
     font-size: 16px;
     font-weight: bold;
     margin: 0;
   }
-  
   .date {
     font-size: 12px;
     margin: 5px 0 0;
@@ -108,3 +98,8 @@
   }
   
 
+  .seccion-calendario{
+    display: grid;
+    grid-area: calendario;
+  }
+  
