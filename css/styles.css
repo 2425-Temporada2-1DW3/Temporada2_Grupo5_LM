@@ -76,10 +76,9 @@ a {
     text-decoration: none;
     color: #5fad00;
 }
-.header-titulo{
-    
+.header-titulo{   
     font-family: 'Righteous', sans-serif; /* Fuente específica y Sans-serif por default */
-
+}
 a:hover {
     text-decoration: underline;
 }
