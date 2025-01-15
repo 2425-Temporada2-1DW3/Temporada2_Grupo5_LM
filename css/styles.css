@@ -43,16 +43,16 @@
     margin-top: 1em;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
+    
 }
 .tituloLeft {
     padding-left: 1%;
     background-color: var(--bgColor1);
     color: var(--txtColor);
     font-size: 3em;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 .tituloRight {
     padding-right: 1%;
@@ -60,8 +60,9 @@
     color: var(--txtColor);
     font-size: 3em;
     text-align: right;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    
 }
 
 /*Clase para no poder selecionar texto*/

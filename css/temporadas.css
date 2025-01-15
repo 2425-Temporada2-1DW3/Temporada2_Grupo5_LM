@@ -1,101 +1,103 @@
-#tituloTemporadas{
-    width: 35%;
-}
-#tituloClasificacion{
-    width: 55%;
-}
+/* PC Version Styles */
 
-#temporadas {
-    width: 100%;
-}
+/* apartado Clasificación */
+@media (min-width: 992px) {
 
-/* Estilo general de la tabla */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    margin-top: 1em;
-    text-align: center;
-    border: 3px solid #3C6AA3;
-    border-top-right-radius: 15px;
-    margin-bottom: 1em;
-}
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        width: 100%;
+        height: 100vh;
+    }
+    .tituloContenidoRight{
+        justify-content: flex-end;
+    }
 
-/* Encabezado */
-th {
-    background-color: #1A408D;
-    color: white;
-    padding: 0.3em;
-    font-size: 1.2em;
-}
+    #tituloClasificacion {
+        width: 100%;
+    }
+    #tituloTemporadas {
+        width: 75%;
 
-/* Filas */
-tr {
-    background-color: #1A408D;
-    color: white;
-    font-size: 1em;
-}
+    }
 
-tr:hover {
-    background-color: #163C79;
-}
+    /* Estilo general de la tabla */
+    table {
+        border-collapse: collapse;
+        margin-top: 1em;
+        text-align: center;
+        border: 3px solid var(--highlight);
+        margin: 1em 5%;
+        width: 90%;
+    }
 
-/* Celdas */
-td {
-    padding: 0.8em;
-    border: 3px solid #3C6AA3;
-}
+    /* Encabezado */
+    th {
+        background-color: var(--bgcolor1);
+        border: 3px solid var(--highlight);
+        color: var(--txtColor1);
+        padding: 0.3em;
+        font-size: 1.6em;
+        font-weight: 200;
 
-/* Logo */
-.logoEquipo {
-    width: auto;
-    height: 3em;
-    border-radius: 50%;
-    background-color: white;
-    border: 1px solid #fff;
-    padding: 0.1em;
-}
+    }
 
-/* Estilo del título de clasificación */
-#clasificacionTitulo {
-    width: 55%;
-    display: flex;
-    justify-content: flex-end;
-    background-color: #1A408D;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
+    /* Filas */
+    tr {
+        background-color: var(--bgColor1);
+        color: var(--txtColor1);
+        font-size: 1em;
+    }
 
-#clasificacionTitulo h2 {
-    font-size: 3em;
-    color: white;
-    margin: 0;
-    padding-right: 1%;
-}
+    tr:hover {
+        background-color: var(--bgColor2);
+    }
 
-/* Contenedor de clasificación */
-#clasificacion {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-top: 1em;
-    margin-left: 10em;
-}
+    /* Celdas */
+    td {
+        padding: 0.8em;
+        border: 3px solid var(--highlight);
+        color: var(--txtColor2);
+    }
 
-/* Clasificación individuales */
-.noticia {
-    display: flex;
-    width: 100%;
-}
+    /* Logo */
+    table tr td img {
+        width: auto;
+        height: 3em;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid #fff;
+        padding: 0.1em;
+    }
+    .logoContainer {
+        width: 2em;
+        height: 1em;
+    }
 
-.imagenNoticia {
-    height: 18em;
-    width: auto;
-    border: 3px solid #3C6AA3;
-    border-radius: 10px;
-}
+    /* Contenedor principal del título */
+    #titulo {
+        margin-top: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
 
-.content {
-    width: 100%;
-    display: flex;
+    /* Estilo del título de clasificación */
+    #tituloEquipo {
+        padding-left: 1%;
+        background-color: #1A408D;
+        color: white;
+        width: 55%;
+        font-size: 3em;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    /* Noticias individuales */
+    #noticias {
+        display: none;
+    }
+
+
 }
