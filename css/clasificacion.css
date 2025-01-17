@@ -1,16 +1,6 @@
-/* Laptops y escritorios (mínimo 992px) */
-/*apartado Clasifiacacion */
-.title2{
-    font-size: 1.5em;
-}
-table tr td{
-   
-        font-family: "Quicksand";
-        font-weight: 400;
-        font-style: normal;
-        font-size: larger;
-    
-}
+
+
+
 #titulo {
     margin-top: 1em;
     display: flex;
@@ -19,18 +9,41 @@ table tr td{
     width: 100%;
 }
 
-#titulo h1 {
+#tituloClasificacion {
     padding-left: 1%;
     background-color: #1A408D;
     color: white;
-    width: 95%;
+    width: 55%;
     font-size: 3em;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+#noticiasTitulo h2 {
+    font-size: 3em;
+    color: white;
+    margin: 0;
+    padding-right: 1%;
+}
+.content {
+    width: 100%;
+    display: flex;
+}
 
 #clasificacion {
     width: 100%;
+}
+
+.tituloTabla {
+    font-size: 1.5em;
+}
+
+table tr td {
+
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+
 }
 
 /* Estilo general de la tabla */
@@ -87,50 +100,18 @@ td {
     height: 1em;
 }
 
-/* Contenedor principal del título */
-#titulo {
-    margin-top: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-/* Estilo del título de clasificación */
-#tituloEquipo {
-    padding-left: 1%;
-    background-color: #1A408D;
-    color: white;
-    width: 55%;
-    font-size: 3em;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-/* Estilo del título de noticias */
-
-
-#noticiasTitulo h2 {
-    font-size: 3em;
-    color: white;
-    margin: 0;
-    padding-right: 1%;
-}
-
-
-
 
 /* Noticias individuales */
-.noticia, .imagenNoticia, #noticiasTitulo, #noticias {
-   display: none;
+.noticia,
+.imagenNoticia,
+#noticiasTitulo,
+#noticias {
+    display: none;
 }
 
 
 
-.content {
-    width: 100%;
-    display: flex;
-}
+
 
 @media (min-width: 992px) {
 
