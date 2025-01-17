@@ -1,56 +1,147 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Quicksand:wght@400;500&family=Righteous&display=swap);
+:root {
+    --bgColor1: #1A408D;
+    --bgColor2: #122c61;
+    --bgColor3: #292929;
+    --txtColor: white;   /*Color de texto usado en Titulos*/
+    --txtColor2:#dcdcdc; /*Color de texto usado en contenido*/ 
+    --highlight:#37A0BB;
+    --highlight2: #00ccff;
+    --highlight3: #059c8f;
 
+    color: var(--txtColor2) /*Por defecto el texto tendra este color*/
 
+}
+
+/* clases para las fuentes*/
+.righteous {
+    font-family: "Righteous", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.montserrat{
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.quicksand{
+    font-family: "Quicksand", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*Texto Responsive de movil*/
+.soloDesktop{
+    display: none;
+}
+.soloMobile{
+    display: inherit;
+}
+
+/* se usa para crear los titulos del contenido*/
+.tituloContenido {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.tituloLeft {
+    padding-left: 1%;
+    background-color: var(--bgColor1);
+    color: var(--txtColor);
+    font-size: 3em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+.tituloRight {
+    padding-right: 1%;
+    background-color: var(--bgColor1);
+    color: var(--txtColor);
+    font-size: 3em;
+    text-align: right;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    
+}
+
+/*Clase para no poder selecionar texto*/
+.textoNoSelecionable{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+/*Quitar espaciados por defecto y ajustar tamaño*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-.header{
-    background-color: #002a6e;
-    height: 4em;
-    width: 100%;
-    display: flex;
-    grid-area: header;
+.body{
+    font-size: 1em;
+    height: 100%;
 }
 
-.header-titulo{
-    
-    font-family: 'Righteous', sans-serif; /* Fuente específica y Sans-serif por default */
-    font-size: 1.3em;
-    
+.html{
+    height: 100vw;
+    width: inherit;
+}
+
+a {
+    text-decoration: none;
+    color:var(--highlight2) ;
+}
+a:hover {
+    color: var(--highlight);
+}
+a:visited {
+    color: var(--highlight3)
+}
+
+
+/*
+██   ██ ███████  █████  ██████  ███████ ██████  
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+███████ █████   ███████ ██   ██ █████   ██████  
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+██   ██ ███████ ██   ██ ██████  ███████ ██   ██ 
+*/
+header{
+    background-color:var(--bgColor1);
+    height: 4em;
+    /* width: 100vw; */
+    display: flex;
+    grid-area: header;
+    padding: 0.5em;
+    color: var(--txtColor); /*Aplica color blanco a todo el contenido de header*/
+}
+
+.headerTitulo{
     letter-spacing: 0.05em; /* Espaciado entre letras */
-    color: white;
     text-transform: uppercase; /* Mayúsculas */
-    /*margin: 0.5em 1em;*/
+    margin: 0 0.5em;
     order: 2;
     flex: 8;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.menu{
-    order: 3;
-    color: white;
-    flex: 3;
-    display: none; /* Oculto por defecto en móviles */
-}
-.header-logo{
+
+.headerLogo{
     order: 1;
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0.5em;
 }
-.logo-header{
+
+.headerLogo img{
     object-fit: cover;
     max-height: 100%;
-    /* height: 4em; */
     width: auto;
 }
-.nav-toggle {
+
+.navMenu_mobile {
     display: flex;
     background: none;
     border: none;
@@ -60,12 +151,9 @@
     flex: 1;
     justify-content: center;
     align-items: center;
-    
 }
 
-
 .grid-container{
-    background-color: aqua;
     display: grid;
     grid-template-areas: 
     "header"
@@ -76,23 +164,24 @@
     min-height: 100vh; /* Ocupa toda la altura de la pantalla */
 }
 
-.body{
-    font-size: 1em;
-    height: 100%;
-}
 
-.html{
-    height: 100%;
-}
 
+/* CONTENEDOR INDEX */
 .container{
-    background-color: burlywood;
+    background-color: var(--bgColor3);
+    height: auto;
     grid-area: main;
 }
 
+ /*
+███████  ██████   ██████  ████████ ███████ ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+█████   ██    ██ ██    ██    ██    █████   ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+██       ██████   ██████     ██    ███████ ██   ██ 
+ */
 .footer {
-    background-color: #002a6e;
-    color: #fff; /* Texto blanco */
+    background-color: var(--bgColor1);
     display: grid;
     grid-template-areas: 
         "contenido-footer"
@@ -100,20 +189,34 @@
         ;
     grid-template-rows: auto auto;
 }
-
 .contenido-footer {
     grid-area: contenido-footer;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsivo: mínimo 300px por columna */
-    gap: 1.5em;
-    padding: 2em;
+    gap: 0em;
+    padding: 0.5em;
+}
+.footer a {
+    text-decoration: none;
+    font-size: 0.9em;
 }
 
 .footer-gobierno {
+    object-fit: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.ministerioCultura_small{
+    display: block;
+    max-width: 100%;
+    height: 7em;
+}
+.ministerioCultura{
+    display: none;
 }
 
 .footer-redesociales {
@@ -130,38 +233,43 @@
     list-style: none;
     padding: 0;
 }
+
+.footer-redesociales h2 {
+    display: none;
+}
+
 .iconos-redesociales a{
     color: #ffffff; /* Color inicial de los iconos */
     font-size: 2rem; /* Tamaño de los iconos */
     text-decoration: none;
-}
-
-.footer-redesociales h2 {
-    margin-bottom: 1em;
-}
-
-.footer-redesociales a {
     margin: 0.2em;
-    text-decoration: none;
 }
+
 
 .footer-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: none;
 }
 
-.footer-contacto a {
-    color: #00bcd4;
-    text-decoration: none;
+.linea-divisora {
+    background-color: #ccc; /* Color de la línea */
+    width: 1px; /* Grosor de la línea */
+    height: 100%; /* Hace que la línea ocupe toda la altura del contenedor */
+}
+
+.logo-footer-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .logo-footer{
+        object-fit: cover;
+        height: 7em;
+    }
 }
 
 .footer-sur {
     grid-area: footer-sur;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     gap: 0.3em;
     background-color: #001c4a; /* Ajustado según diseño */
     padding: 0.5em;
@@ -172,47 +280,52 @@
 
 .footer-sur-item {
     display: flex;
+    align-items: center;
+    text-align: center;
     justify-content: center;
     gap: 1em;
 }
 
 .btn-volver {
-    background-color: #00bcd4;
-    color: white;
+    background-color: var(--bgColor1);   
     border: none;
-    padding: 0.5em 1em;
+    padding: 0.5em 1.5em;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 0.9em;
+    font-size: 1em;
+    a{
+        color: white;
+    }
 }
-
-.enlace-footer {
-    color: #00bcd4;
-    text-decoration: none;
-    font-size: 0.9em;
-}
-
-.enlace-footer:hover {
-    text-decoration: underline;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+.btn-volver:hover {
+    background-color:var(--highlight);
 }
 
 /* Tabletas (mínimo 768px) */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 
 }
-
-
+ */
 
 
 /* Laptops y escritorios (mínimo 992px) */
 @media (min-width: 992px) {
+    /*
+    ██   ██ ███████  █████  ██████  ███████ ██████  
+    ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+    ███████ █████   ███████ ██   ██ █████   ██████  
+    ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+    ██   ██ ███████ ██   ██ ██████  ███████ ██   ██ 
+    */
 
-    .header{
+    .soloDesktop{
+        display: inherit;
+    }
+    .soloMobile{
+        display: none;
+    }
+    /*Header*/
+    header{
         height: 10em;
         width: 100%;
         display: grid;
@@ -222,28 +335,27 @@ img {
         "navbar logo"
         ;
         grid-template-columns: 8fr 2fr;
+
     }
     
-    .header-titulo{
+    .headerTitulo{
         grid-area: titulo;
-        font-family: 'Righteous', sans-serif; /* Fuente específica y Sans-serif por default */
-        font-size: 4em;
-
-        
-        letter-spacing: 0.05em; /* Espaciado entre letras */
-        color: white;
+        font-size: 2.0em;
+        color: var(--txtColor);
         text-transform: uppercase; /* Mayúsculas */
-        /*margin: 0.5em 1em;*/
         display: flex;
         align-items: center;
         justify-content: start;
         padding: 0em 1em;
+        margin:  0;
     }
-    .menu{
+
+    .headerMenu{
         grid-area: navbar;
         display: flex; /* Oculto por defecto en móviles */
     }
-    .nav-menu{
+    
+    .navMenu{
         list-style: none; /* Quita los puntos de lista */
         margin: 0;
         padding: 0;
@@ -253,25 +365,59 @@ img {
         padding: 0em 2em;
         width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
     }
-    .nav-menu a{
+    .navMenu a{
         color: white;
         text-decoration: none;
+        font-size: 1.2em; /* 16px equivalente */
+        padding: 0.5em 0.75em;
+        border-radius: 0.3em;
+        background-color: var(--bgColor2);
     }   
-    .header-logo{
+
+    .navMenu a:hover {
+        background-color: var(--highlight);
+    }
+
+    .headerLogo{
         grid-area: logo;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0em;
     }
-    .logo-header{
+    .headerLogo img{
         object-fit: cover;
         max-height: 100%;
         height: 8em;
         width: auto;
     }
-    .nav-toggle {
+
+    /*
+    ██   ██ ███████  █████  ██████  ███████ ██████  
+    ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+    ███████ █████   ███████ ██   ██ █████   ██████  
+    ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+    ██   ██ ███████ ██   ██ ██████  ███████ ██   ██ 
+    */
+    .ministerioCultura_small{
         display: none;
     }
+    .ministerioCultura{
+        display: block;
+        max-width: 100%;
+        height: 7em;
+    }
+    .footer-redesociales h2 {
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        display: flex;
+    }
+    .footer-contacto{
+        display: grid; /* Activa el grid */
+        grid-template-columns: 1fr 1px 3fr; /* Divide en dos columnas, 1 parte para el logo y 3 para el texto */
+        gap: 1em; /* Espaciado entre columnas */
+        align-items: center; /* Centra el contenido verticalmente */
+        padding: 1em;
+    }
 
-}
+} 

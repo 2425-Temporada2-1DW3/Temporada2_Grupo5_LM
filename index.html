@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Federacion de boley</title>
+    <link rel="icon" type="image/x-icon" href="/imagenes/logos/favicon.ico">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
 
-</head>
-<body class="grid-container">
+
     
-    <header class="header">
-        <div class="header-titulo">
-            <h4>Federacion Voleibol</h4>
+</head>
+
+<body class="grid-container">
+
+    <header class="textoNoSelecionable" id="inicio">
+        <div class="headerTitulo">
+            <h1 class="soloDesktop righteous">federación de voleibol</h1>
+            <h1 class="soloMobile righteous">fdv</h1>
         </div>
-        
-        <button class="nav-toggle" aria-label="Abrir menú">
+
+        <button class="navMenu_mobile soloMobile">
             <i class="fas fa-bars"></i>
         </button>
-        <nav class="menu">
-            <ul class="nav-menu">
-                <li><a href="#clasificacion">Clasificación</a></li>
-                <li><a href="#equipos">Equipos</a></li>
-                <li><a href="#temporadas">Temporadas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+        
+        <nav>
+            <ul class="navMenu soloDesktop montserrat">
+                <li><a href="#" class="load-content" data-url="inicio.html">Inicio</a></li>
+                <li><a href="#" class="load-content" data-url="clasificacion.html">Clasificación</a></li>
+                <li><a href="#" class="load-content" data-url="equipos.html">Equipos</a></li>
+                <li><a href="#" class="load-content" data-url="temporadas.html">Temporadas</a></li>
+                <li><a href="#" class="load-content" data-url="contacto.html">Contacto</a></li>
             </ul>
-            
         </nav>
 
-        <div class="header-logo">
-            <img src="./imagenes/logo-grey.png" alt="Logo Federación Voleibol" class="logo-header">
+        <div class="headerLogo">
+            <img src="./imagenes/logos/logo.png" alt="Logo Federación Voleibol">
         </div>
-    </header>
-    
-    <article class="container">
-        <H4>CONTENIDO</H4>
-        </article>
 
-    
-        
+    </header>
+
+    <article class="container" id="dynamic-content">
+    </article>
+
+
+
     <!-- Footer -->
     <footer class="footer">
         <div class="contenido-footer">
             <!-- Información general -->
             <div class="footer-gobierno">
-                <img src="./imagenes/logomincult.svg" alt="Gobierno Logo" class="gobierno-logo">
+                <a href="https://www.cultura.gob.es/" target="_blank">
+                    <img src="./imagenes/logos/ministerioCultura.svg" alt="Gobierno Logo" class="ministerioCultura">
+                    <img src="./imagenes/logos/ministerioCultura_small.png" alt="Gobierno Logo" class="ministerioCultura_small">
+                </a>
                 
             </div>
 
             <!-- Redes Sociales -->
-            <div class="footer-redesociales">
+            <div class="footer-redesociales montserrat textoNoSelecionable">
                 <h2>Redes Sociales</h2>
                 <div class="iconos-redesociales">
                     <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
@@ -59,38 +71,49 @@
                     <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
                 </div>
             </div>
-        <!-- Detalles de contacto -->
-        <div class="footer-contacto">
-            <img src="./imagenes/logo-footer.png" alt="Logo Federación Voleibol" class="logo-footer">
-            <p>Dirección: Avenida de Mikel, 13 3ªA 28004 - Madrid</p>
-            <p>Teléfono: (+34) 917 013 170</p>
-            <p>Fax: (+34) 912 126 332</p>
-            <p>Email: <a href="mailto:info@fdv.gov">info@fdv.gov</a></p>
-        </div>
+            <!-- Detalles de contacto -->
+            <div class="footer-contacto">
+                <div class="logo-footer-info">
+                    <a href="./index.html">
+                    <img src="./imagenes/logos/logo_transparent.png" alt="Logo Federación Voleibol" class="logo-footer">
+                    </a>
+                </div>
+                <div class="linea-divisora"></div>
+                <div class="info-footer quicksand">
+                    <p>Dirección: Avenida de Mikel, 13 3ªA 28004 - Madrid</p>
+                    <p>Teléfono: (+34) 917 013 170</p>
+                    <p>Fax: (+34) 912 126 332</p>
+                    <p>Email: <a href="mailto:info@fdv.gov">info@fdv.gov</a></p>
+                </div>
+            </div>
 
         </div>
         <!-- Copyright -->
-        <div class="footer-sur">
+        <div class="footer-sur montserrat textoNoSelecionable">
             <!-- Botón a la izquierda -->
-            <div class="footer-sur-item">
-                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="btn-volver">Volver al inicio</button>
+            <div class="footer-sur-item ">
+                <!-- Botón para subir al inicio de la página -->
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="btn-volver"> 
+                    <a href="#inicio">Volver al inicio</a>
+                </button>
             </div>
-        
+
             <!-- Texto de copyright al centro -->
-            <div class="footer-sur-item">
+            <div class="footer-sur-item ">
                 <p>COPYRIGHT 2025 FDV</p>
             </div>
-        
+
             <!-- Enlaces a la derecha -->
-            <div class="footer-sur-item">
-                <a href="#condiciones-legales" class="enlace-footer">Condiciones Legales</a> | 
-                <a href="#contacto" class="enlace-footer">Contacto</a>
+            <div class="footer-sur-item ">
+                <a href="#" class="enlace-footer load-content" data-url="terms.html">Condiciones Legales</a> |
+                <a href="#" class="enlace-footer load-content" data-url="contacto.html">Contacto</a>
             </div>
         </div>
-        
+
     </footer>
 
 
 
 </body>
+
 </html>
