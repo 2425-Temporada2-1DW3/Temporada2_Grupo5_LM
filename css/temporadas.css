@@ -20,6 +20,25 @@
         width: 75%;
 
     }
+    #temporadas div{
+        font-size: 1.2em;
+        margin: 1em 2em;
+    }
+    #temporadas button{
+            background-color: var(--bgColor1);   
+            border: none;
+            padding: 0.5em 1.5em;
+            cursor: pointer;
+            border-radius: 15px;
+            font-size: 1.6em;
+            a{
+                color:var(--txtColor);
+            }
+    }
+
+    #temporadas button:hover{
+        background-color:var(--highlight);
+    }
 
     /* Estilo general de la tabla */
     table {
@@ -65,8 +84,8 @@
         width: auto;
         height: 3em;
         border-radius: 50%;
-        background-color: white;
-        border: 1px solid #fff;
+        color:var(--txtColor);
+        border: 1px solid var(--txtColor);
         padding: 0.1em;
     }
     .logoContainer {
@@ -86,8 +105,8 @@
     /* Estilo del título de clasificación */
     #tituloEquipo {
         padding-left: 1%;
-        background-color: #1A408D;
-        color: white;
+        background-color: var(--bgColor1);
+        color:var(--txtColor);
         width: 55%;
         font-size: 3em;
         border-top-right-radius: 20px;
