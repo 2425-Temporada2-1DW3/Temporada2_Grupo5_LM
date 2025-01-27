@@ -126,6 +126,25 @@ table tr td img {
     #tituloClasificacion{
         width: 100%;
     }
+    #temporadas div{
+        font-size: 1.2em;
+        margin: 1em 2em;
+    }
+    #temporadas button{
+            background-color: var(--bgColor1);   
+            border: none;
+            padding: 0.5em 1.5em;
+            cursor: pointer;
+            border-radius: 15px;
+            font-size: 1.6em;
+            a{
+                color:var(--txtColor);
+            }
+    }
+
+    #temporadas button:hover{
+        background-color:var(--highlight);
+    }
 
     table {
         margin: 1em 0;
