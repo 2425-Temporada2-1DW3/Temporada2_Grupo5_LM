@@ -1,103 +1,140 @@
 /* PC Version Styles */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    height: 100vh;
+}
+.tituloContenidoRight{
+    justify-content: flex-end;
+}
 
-/* apartado Clasificación */
-@media (min-width: 992px) {
+#tituloClasificacion {
+    width: 100%;
+}
+#tituloTemporadas {
+    width: 75%;
+}
 
+#temporadas div{
+    font-size: 1.2em;
+    margin: 1em 2em;
+}
+#temporadas button{
+        background-color: var(--bgColor1);   
+        border: none;
+        padding: 0.5em 1.5em;
+        cursor: pointer;
+        border-radius: 15px;
+        font-size: 1.6em;
+        a{
+            color:var(--txtColor);
+        }
+}
+
+#temporadas button:hover{
+    background-color:var(--highlight);
+}
+
+/* Estilo general de la tabla */
+table {
+    border-collapse: collapse;
+    margin-top: 1em;
+    text-align: center;
+    border: 3px solid var(--highlight);
+    margin: 1em 5%;
+    width: 90%;
+}
+
+/* Encabezado */
+th {
+    background-color: var(--bgcolor1);
+    border: 3px solid var(--highlight);
+    color: var(--txtColor1);
+    padding: 0.3em;
+    font-size: 1.6em;
+    font-weight: 200;
+
+}
+
+/* Filas */
+tr {
+    background-color: var(--bgColor1);
+    color: var(--txtColor1);
+    font-size: 1em;
+}
+
+tr:hover {
+    background-color: var(--bgColor2);
+}
+
+/* Celdas */
+td {
+    padding: 0.8em;
+    border: 3px solid var(--highlight);
+    color: var(--txtColor2);
+}
+
+/* Logo */
+table tr td img {
+    width: auto;
+    height: 3em;
+    border-radius: 50%;
+    color:var(--txtColor);
+    border: 1px solid var(--txtColor);
+    padding: 0.1em;
+}
+.logoContainer {
+    width: 2em;
+    height: 1em;
+}
+
+/* Contenedor principal del título */
+#titulo {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo del título de clasificación */
+#tituloEquipo {
+    padding-left: 1%;
+    background-color: var(--bgColor1);
+    color:var(--txtColor);
+    width: 55%;
+    font-size: 3em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Noticias individuales */
+#noticias {
+    display: none;
+}
+/*  Version Movil */
+@media (max-width: 992px) {
     .gridContainer {
-        display: grid;
-        grid-template-columns: 60% 40%;
-        width: 100%;
-        height: 100vh;
-    }
-    .tituloContenidoRight{
-        justify-content: flex-end;
-    }
-
-    #tituloClasificacion {
-        width: 100%;
+        grid-template-columns: 1fr; 
+        grid-auto-rows: auto; 
+        height: auto; 
     }
     #tituloTemporadas {
-        width: 75%;
-
+        width: 100%;
     }
-
-    /* Estilo general de la tabla */
-    table {
-        border-collapse: collapse;
-        margin-top: 1em;
-        text-align: center;
-        border: 3px solid var(--highlight);
-        margin: 1em 5%;
-        width: 90%;
-    }
-
-    /* Encabezado */
-    th {
-        background-color: var(--bgcolor1);
-        border: 3px solid var(--highlight);
-        color: var(--txtColor1);
-        padding: 0.3em;
-        font-size: 1.6em;
-        font-weight: 200;
-
-    }
-
-    /* Filas */
-    tr {
-        background-color: var(--bgColor1);
-        color: var(--txtColor1);
-        font-size: 1em;
-    }
-
-    tr:hover {
-        background-color: var(--bgColor2);
-    }
-
-    /* Celdas */
-    td {
-        padding: 0.8em;
-        border: 3px solid var(--highlight);
-        color: var(--txtColor2);
-    }
-
-    /* Logo */
-    table tr td img {
-        width: auto;
-        height: 3em;
-        border-radius: 50%;
-        background-color: white;
-        border: 1px solid #fff;
-        padding: 0.1em;
-    }
-    .logoContainer {
-        width: 2em;
-        height: 1em;
-    }
-
-    /* Contenedor principal del título */
-    #titulo {
-        margin-top: 1em;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    #tituloClasificacion{
         width: 100%;
     }
 
-    /* Estilo del título de clasificación */
-    #tituloEquipo {
-        padding-left: 1%;
-        background-color: #1A408D;
-        color: white;
-        width: 55%;
-        font-size: 3em;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+    table {
+        margin: 1em 0;
+        width: 100%;
     }
-
-    /* Noticias individuales */
-    #noticias {
-        display: none;
+    #temporadas button a {
+        font-size: 0.8em;
     }
-
-
+    #temporadas button {
+        width: 100%;
+    }
 }
