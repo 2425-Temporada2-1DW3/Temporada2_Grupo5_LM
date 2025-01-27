@@ -1,12 +1,12 @@
 <temporada>
 	<nombre>
-		temporadaTest
+		asdfasdf
 	</nombre>
 	<iniciado>
 		true
 	</iniciado>
 	<finalizado>
-		true
+		false
 	</finalizado>
 	<jornadas>
 		<jornada>
@@ -41,7 +41,7 @@
 								3
 							</NombreLocal>
 							<puntuacion>
-								3
+								2
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
@@ -61,7 +61,7 @@
 								7
 							</NombreLocal>
 							<puntuacion>
-								2
+								1
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
@@ -69,7 +69,7 @@
 								1
 							</nombreVisitante>
 							<puntuacion>
-								3
+								1
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -686,10 +686,10 @@
 				1
 			</posicion>
 			<nombre>
-				a
+				2
 			</nombre>
 			<puntosTotales>
-				4
+				3
 			</puntosTotales>
 		</equipo>
 		<equipo>
@@ -697,18 +697,7 @@
 				2
 			</posicion>
 			<nombre>
-				a
-			</nombre>
-			<puntosTotales>
-				4
-			</puntosTotales>
-		</equipo>
-		<equipo>
-			<posicion>
 				3
-			</posicion>
-			<nombre>
-				b
 			</nombre>
 			<puntosTotales>
 				3
@@ -716,13 +705,24 @@
 		</equipo>
 		<equipo>
 			<posicion>
-				4
+				3
 			</posicion>
 			<nombre>
-				t
+				7
 			</nombre>
 			<puntosTotales>
 				3
+			</puntosTotales>
+		</equipo>
+		<equipo>
+			<posicion>
+				4
+			</posicion>
+			<nombre>
+				1
+			</nombre>
+			<puntosTotales>
+				1
 			</puntosTotales>
 		</equipo>
 		<equipo>
@@ -730,7 +730,7 @@
 				5
 			</posicion>
 			<nombre>
-				c
+				4
 			</nombre>
 			<puntosTotales>
 				1
@@ -741,7 +741,7 @@
 				6
 			</posicion>
 			<nombre>
-				d
+				56
 			</nombre>
 			<puntosTotales>
 				1
