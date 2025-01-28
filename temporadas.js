@@ -7,7 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Asociar el evento click al botón
   temporadaButton.addEventListener('click', async function (e) {
     e.preventDefault(); // Prevenir comportamiento por defecto del enlace
+    await cargarTemporadas(); // Cargar temporadas al hacer clic
+    cargarTemporadas();
+  });
 
+  // Función para cargar las temporadas y renderizar el contenido
+  async function cargarTemporadas() {
     try {
       const response = await fetch('/xml'); // Obtener el listado de archivos XML
       if (!response.ok) {
@@ -69,16 +74,23 @@ document.addEventListener('DOMContentLoaded', function () {
         temporadasContainer.appendChild(temporadaDiv);
       });
 
+      // Si hay archivos XML, cargar automáticamente el primero
+      if (xmlFiles.length > 0) {
+        console.log(`Cargando automáticamente el archivo: ${xmlFiles[0]}`);
+        await loadXMLContent(xmlFiles[0]); // Cargar automáticamente el primer archivo
+      }
+
     } catch (error) {
       console.error('Error:', error);
     }
+    
+  }
 
-  });
-
+  // Función para cargar y transformar el contenido de un archivo XML
   async function loadXMLContent(file) {
     try {
       console.log(file)
-      file = file+".xml"
+      file = file + ".xml"
       const xmlResponse = await fetch(`/xml/${file}`); // Obtener el archivo XML
       console.log(file)
       if (!xmlResponse.ok) {
@@ -116,4 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
       console.error('Hubo un problema al cargar o transformar el contenido del archivo XML:', error);
     }
   }
+
+  // Llamar a cargarTemporadas al cargar la página
+ 
 });
