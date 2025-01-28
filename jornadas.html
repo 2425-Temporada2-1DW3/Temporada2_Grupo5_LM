@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="./css/clasificacion.css">
+<script>
+    document.getElementById("jornadas").hidden = true;
+    document.getElementById("dropDown").addEventListener("click", function(){
+        document.getElementById("jornadas").hidden = !document.getElementById("jornadas").hidden;
+    });
+</script>
+<div id="titulo">
+    <h1 id="tituloClasificacion" class="righteous-regular">JORNADAS</h1>
+    
+</div>
+<div id="dropDown" class="montserrat">
+    Selecciona jornada
+    <img src="imagenes/logos/flecha.png" alt="">
+</div>
+<div id="jornadas" class="quicksand">
+    <ul class="lista">
+        <li>
+            jornada1
+        </li>
+        <li>
+           jornada2
+        </li>
+        <li>
+            jornada3
+        </li>
+    </ul>
+</div>
