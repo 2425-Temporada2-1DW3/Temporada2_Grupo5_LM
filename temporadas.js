@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   temporadaButton.addEventListener('click', async function (e) {
     e.preventDefault(); // Prevenir comportamiento por defecto del enlace
     await cargarTemporadas(); // Cargar temporadas al hacer clic
-    cargarTemporadas();
+    
   });
 
   // Función para cargar las temporadas y renderizar el contenido
