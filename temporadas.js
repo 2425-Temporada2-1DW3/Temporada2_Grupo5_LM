@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   temporadaButton.addEventListener('click', async function (e) {
     e.preventDefault(); // Prevenir comportamiento por defecto del enlace
     await cargarTemporadas(); // Cargar temporadas al hacer clic
-    
+
   });
 
   // Función para cargar las temporadas y renderizar el contenido
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } catch (error) {
       console.error('Error:', error);
     }
-    
+
   }
 
   // Función para cargar y transformar el contenido de un archivo XML
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
         throw new Error('Error al obtener el archivo XML: ' + xmlResponse.statusText);
       }
 
-      const xsltResponse = await fetch('/xml/temporadas.xslt'); // Obtener el archivo XSLT
+      const xsltResponse = await fetch('/xsl/temporadas.xslt'); // Obtener el archivo XSLT
       if (!xsltResponse.ok) {
         throw new Error('Error al obtener el archivo XSLT: ' + xsltResponse.statusText);
       }
@@ -130,5 +130,5 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Llamar a cargarTemporadas al cargar la página
- 
+
 });

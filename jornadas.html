@@ -1,30 +1,27 @@
 <link rel="stylesheet" href="./css/clasificacion.css">
 <script>
-    document.getElementById("jornadas").hidden = true;
-    document.getElementById("dropDown").addEventListener("click", function(){
-        document.getElementById("jornadas").hidden = !document.getElementById("jornadas").hidden;
+    document.getElementById("dropDownContainer").hidden = true;
+
+    document.getElementById("dropDown").addEventListener("click", function () {
+        // Cambiar el estado de ocultar/mostrar
+        document.getElementById("dropDownContainer").hidden = !document.getElementById("dropDownContainer").hidden;
     });
+
 </script>
 
 <div id="titulo">
     <h1 id="tituloClasificacion" class="righteous-regular">JORNADAS</h1>
-    
+
 </div>
 <button id="dropDown" class="montserrat">
     Selecciona jornada
     <img src="imagenes/logos/flecha.png" alt="">
 </button>
+<div id="dropDownContainer" hidden>
+    <div id="jornadas" class="quicksand">
 
-<div id="jornadas" class="quicksand">
-    <ul class="lista">
-        <li>
-            jornada1
-        </li>
-        <li>
-           jornada2
-        </li>
-        <li> 
-            jornada3
-        </li>
-    </ul>
+    </div>
+</div>
+<div id="jornadaContenido">
+
 </div>
