@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         await cargarJornada();
         // Aquí es donde se espera que el contenido de "dropDown" se cargue dinámicamente
         // Usamos un delegado de eventos para manejar clics en el "dropDown" incluso si no existe aún.
-        
+
     }
 
     // Función que hace el fetch de los datos de la jornada
@@ -45,18 +45,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     async function loadXMLContent(xmlFiles) {
         try {
-            console.log(xmlFiles);
+            //console.log(xmlFiles);
             var length = xmlFiles.length - 1;
             const xmlResponse = await fetch(`/xml/${xmlFiles[length]}`);
+            console.log("test "+xmlResponse);
             if (!xmlResponse.ok) {
                 throw new Error('Error al obtener el archivo XML: ' + xmlResponse.statusText);
             }
-    
+
             const xsltResponse = await fetch('/xsl/jornadaFilter.xslt');
             if (!xsltResponse.ok) {
                 throw new Error('Error al obtener el archivo XSLT: ' + xsltResponse.statusText);
             }
-    
+
             const xmlText = await xmlResponse.text();
             const xsltText = await xsltResponse.text();
             const parser = new DOMParser();
@@ -65,18 +66,18 @@ document.addEventListener('DOMContentLoaded', async () => {
             const xsltProcessor = new XSLTProcessor();
             xsltProcessor.importStylesheet(xsltDoc);
             const transformedFragment = xsltProcessor.transformToFragment(xmlDoc, document);
-    
+
             const contentContainer = document.querySelector('#dropDownContainer');
             if (contentContainer) {
                 contentContainer.innerHTML = ''; // Limpiar contenido previo
                 contentContainer.appendChild(transformedFragment); // Insertar el contenido transformado
                 console.log('Contenido XML cargado correctamente');
-    
+
                 // Agregar EventListener a cada <li> dentro de #jornadas
                 document.querySelectorAll('#jornadas li').forEach(li => {
                     li.addEventListener('click', function () {
                         let idJornada = this.getAttribute('data-id'); // Obtener el ID de la jornada
-                        cargarContenidoJornada(idJornada);
+                        cargarContenidoJornada(idJornada, xmlFiles);
                     });
                 });
             } else {
@@ -86,30 +87,105 @@ document.addEventListener('DOMContentLoaded', async () => {
             console.error('Error al cargar el contenido XML:', error);
         }
     }
-    
-//     async function cargarContenidoJornada(idJornada, xmlFiles) {
-//     console.log(`Cargando datos de la Jornada ${idJornada}`);
-    
-        
-//      fetch(`/xml/${xmlFiles[length]}`)  // Cargar el archivo XML completo
-//          .then(response => response.text())
-//          .then(xmlText => {
-//              // Parsear el XML
-//              const parser = new DOMParser();
-//              const xmlDoc = parser.parseFromString(xmlText, "application/xml");
 
-//              // Filtrar o buscar solo los datos de la jornada seleccionada
-//              const jornada = xmlDoc.querySelector(`jornada[id_jornada="${idJornada}"]`);
-//              if (jornada) {
-//                  // Transformar solo el contenido de la jornada seleccionada con XSLT
-//                  transformToHTML(jornada, idJornada);
-//              } else {
-//                  console.error(`Jornada con ID ${idJornada} no encontrada.`);
-//              }
-//          })
-//          .catch(error => {
-//              console.error('Error al cargar el archivo XML:', error);
-//          });
-// }
-
+    async function cargarContenidoJornada(idTemporada, xmlFiles) {
+        // Verificar que xmlFiles es un array válido y tiene datos
+        if (!xmlFiles || !Array.isArray(xmlFiles) || xmlFiles.length === 0) {
+            console.error("Error: xmlFiles no es un array válido o está vacío.");
+            return;
+        }
+    
+        let length = xmlFiles.length - 1;
+        let xmlFile = xmlFiles[length];
+    
+        try {
+            let response = await fetch(`/xml/${xmlFile}`);
+            let str = await response.text();
+            let parser = new DOMParser();
+            let xmlDoc = parser.parseFromString(str, "text/xml");
+    
+            // Buscar la jornada cuyo id_jornada coincide con idTemporada
+            let jornadas = xmlDoc.getElementsByTagName("jornada");
+            let jornadaEncontrada = null;
+    
+            for (let i = 0; i < jornadas.length; i++) {
+                let idJornada = jornadas[i].getElementsByTagName("id_jornada")[0]?.textContent?.trim();
+    
+                // Comparamos id_jornada con el idTemporada
+                if (idJornada === idTemporada.toString().trim()) {
+                    jornadaEncontrada = jornadas[i];
+                    break;
+                }
+            }
+    
+            if (!jornadaEncontrada) {
+                console.error(`No se encontró la jornada con id_jornada ${idTemporada}`);
+                return;
+            }
+    
+            // Obtener todos los partidos dentro de esa jornada
+            let partidos = jornadaEncontrada.getElementsByTagName("partido");
+            let resultados = [];
+    
+            // Filtrar los partidos
+            for (let i = 0; i < partidos.length; i++) {
+                let equipoLocal = partidos[i].getElementsByTagName("NombreLocal")[0]?.textContent?.trim() || "Desconocido";
+                let equipoVisitante = partidos[i].getElementsByTagName("nombreVisitante")[0]?.textContent?.trim() || "Desconocido";
+                let puntuacionLocal = partidos[i].getElementsByTagName("puntuacion")[0]?.textContent?.trim() || "0";
+                let puntuacionVisitante = partidos[i].getElementsByTagName("puntuacion")[1]?.textContent?.trim() || "0";
+    
+                // Agregar al resultado
+                resultados.push({
+                    equipoLocal,
+                    puntuacionLocal,
+                    equipoVisitante,
+                    puntuacionVisitante
+                });
+            }
+    
+            // Crear la tabla con los resultados
+            const contentContainer = document.querySelector('#jornadaContenido');
+            if (contentContainer) {
+                // Limpiar contenido previo
+                contentContainer.innerHTML = '';
+    
+                // Crear tabla HTML
+                let tabla = document.createElement('table');
+                tabla.classList.add('resultado-table');  // Puedes agregar una clase CSS para estilizarla
+    
+                // Crear encabezados de la tabla
+                let headerRow = document.createElement('tr');
+                headerRow.innerHTML = `
+                    <th>Equipo Local</th>
+                    <th>Pts Local</th>
+                    <th>Equipo Visitante</th>
+                    <th>Pts Visitante</th>
+                `;
+                tabla.appendChild(headerRow);
+    
+                // Crear las filas de la tabla con los resultados
+                resultados.forEach(resultado => {
+                    let row = document.createElement('tr');
+                    row.classList.add('quicksand'); // Puedes agregar una clase CSS para estilizarla
+    
+                    row.innerHTML = `
+                        <td>${resultado.equipoLocal}</td>
+                        <td>${resultado.puntuacionLocal}</td>
+                        <td>${resultado.equipoVisitante}</td>
+                        <td>${resultado.puntuacionVisitante}</td>
+                    `;
+                    tabla.appendChild(row);
+                });
+    
+                // Insertar la tabla generada en el contenedor
+                contentContainer.appendChild(tabla);
+                console.log(`Partidos en la jornada con id_jornada ${idTemporada}:`, resultados);
+            } else {
+                console.error('El contenedor con el id "dropDownContainer" no existe.');
+            }
+        } catch (error) {
+            console.error("Error al cargar el XML:", error);
+        }
+    }
+    
 });
