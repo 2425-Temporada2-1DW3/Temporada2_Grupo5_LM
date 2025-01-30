@@ -1,0 +1,126 @@
+#titulo {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#tituloJornada {
+    padding-left: 1%;
+    background-color: #1A408D;
+    color: white;
+    width: 35%;
+    font-size: 3em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#tituloJornada2 {
+    padding-left: 1%;
+    background-color: #1A408D;
+    color: white;
+    width: 35%;
+    font-size: 3em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#dropDown{
+    width: 15em;
+    background: #1A408D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    margin-top: 1em;
+    padding-left: 1em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#dropDownContainer{
+    margin-left: 0.4em;
+
+}
+#dropDownContainer div ul li{
+    list-style: none;
+    padding: 0.2em 1em;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+#dropDownContainer div{
+    margin-top: 0.5em;
+    width: 10em;
+    border-radius: 0.7em;
+}
+#dropDownContainer div ul li:hover{
+    background-color: var(--highlight);
+    transition: all 0.7s;
+    cursor: pointer;
+    font-weight: bold;
+}
+#dropDown:hover{
+    cursor: pointer;
+}
+#dropDown img{
+    width: 1em;
+    height: 1em;
+    margin: 0.5em;
+}
+#jornadas{
+    
+    width: 15em;
+    background: #1A408D;
+   
+}
+/* Estilo general de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-top: 1em;
+    text-align: center;
+    border: 3px solid #3C6AA3;
+    border-top-right-radius: 15px;
+    margin-bottom: 1em;
+}
+
+/* Encabezado */
+th {
+    background-color: #1A408D;
+    color: white;
+    padding: 0.3em;
+    font-size: 1.2em;
+}
+
+/* Filas */
+tr {
+    background-color: #1A408D;
+    color: white;
+    font-size: 1em;
+
+}
+
+
+
+tr:hover {
+    background-color: #163C79;
+}
+
+/* Celdas */
+td {
+    padding: 0.8em;
+    border: 3px solid #3C6AA3;
+}
+
+/* Logo */
+#clasificacion tr td img {
+    width: auto;
+    height: 3em;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #fff;
+    padding: 0.1em;
+}
+.logoContainer {
+    width: 2em;
+    height: 1em;
+}

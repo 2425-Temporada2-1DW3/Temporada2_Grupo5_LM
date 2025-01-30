@@ -36,31 +36,7 @@
 .tituloTabla {
     font-size: 1.5em;
 }
-#dropDown{
-    width: 15em;
-    background: #1A408D;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.5em;
-    margin-top: 1em;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-#dropDown:hover{
-    cursor: pointer;
-}
-#dropDown img{
-    width: 1em;
-    height: 1em;
-    margin: 0.5em;
-}
-#jornadas{
-    
-    width: 15em;
-    background: #1A408D;
-   
-}
+
 table tr td {
 
     font-family: "Quicksand";

@@ -376,7 +376,8 @@ header{
 
     .navMenu a:hover {
         background-color: var(--highlight);
-    }
+        transition: all 1s;
+     }
 
     .headerLogo{
         grid-area: logo;
