@@ -340,7 +340,7 @@ header{
     
     .headerTitulo{
         grid-area: titulo;
-        font-size: 2.0em;
+        font-size: 1.7em;
         color: var(--txtColor);
         text-transform: uppercase; /* Mayúsculas */
         display: flex;
@@ -376,7 +376,8 @@ header{
 
     .navMenu a:hover {
         background-color: var(--highlight);
-    }
+        transition: all 1s;
+     }
 
     .headerLogo{
         grid-area: logo;

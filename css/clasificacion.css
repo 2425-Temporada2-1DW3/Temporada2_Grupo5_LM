@@ -45,6 +45,10 @@ table tr td {
     font-size: larger;
 
 }
+.lista{
+    font-size: larger;
+    margin-left: 10px;
+}
 
 /* Estilo general de la tabla */
 table {

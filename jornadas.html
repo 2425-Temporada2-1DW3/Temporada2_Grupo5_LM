@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="./css/jornadas.css">
+<script>
+    document.getElementById("dropDownContainer").hidden = true;
+
+    document.getElementById("dropDown").addEventListener("click", function () {
+        // Cambiar el estado de ocultar/mostrar
+        document.getElementById("dropDownContainer").hidden = !document.getElementById("dropDownContainer").hidden;
+    });
+
+</script>
+
+<div id="titulo">
+    <h1 id="tituloJornada" class="righteous">JORNADAS</h1>
+
+</div>
+<div id="dropDown" class="montserrat">
+    Selecciona jornada
+    <img src="imagenes/logos/flecha.png" alt="">
+</div>
+<div id="dropDownContainer" hidden>
+    <div id="jornadas" class="quicksand">
+
+    </div>
+</div>
+<div id="titulo">
+    <h1 id="tituloJornada2" class="righteous">JORNADA 1</h1>
+
+</div>
+<div id="jornadaContenido">
+
+</div>
