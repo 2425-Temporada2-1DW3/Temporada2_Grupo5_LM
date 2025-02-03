@@ -124,3 +124,11 @@ td {
     width: 2em;
     height: 1em;
 }
+@media (max-width: 991px) {
+    #tituloJornada2{
+        width: 100%;
+    }
+    #tituloJornada{
+        width: 100%;
+    }
+}

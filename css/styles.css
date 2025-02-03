@@ -292,6 +292,7 @@ header{
     padding: 0.5em 1.5em;
     cursor: pointer;
     border-radius: 5px;
+    transition: 0.5s;
     font-size: 1em;
     a{
         color:var(--txtColor);
@@ -372,11 +373,12 @@ header{
         padding: 0.5em 0.75em;
         border-radius: 0.3em;
         background-color: var(--bgColor2);
+        transition: all 0.5s;
+
     }   
 
     .navMenu a:hover {
         background-color: var(--highlight);
-        transition: all 1s;
      }
 
     .headerLogo{

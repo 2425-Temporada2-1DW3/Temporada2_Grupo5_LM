@@ -3,10 +3,10 @@
 		Temporada1
 	</nombre>
 	<iniciado>
-		false
+		true
 	</iniciado>
 	<finalizado>
-		false
+		true
 	</finalizado>
 	<jornadas>
 		<jornada>
@@ -18,15 +18,35 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								a
+								Chelsea
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								f
+								Betis
+							</nombreVisitante>
+							<puntuacion>
+								1
+							</puntuacion>
+						</equipo_visitante>
+					</equipos>
+				</partido>
+				<partido>
+					<equipos>
+						<equipo_local>
+							<NombreLocal>
+								Madrid
+							</NombreLocal>
+							<puntuacion>
+								3
+							</puntuacion>
+						</equipo_local>
+						<equipo_visitante>
+							<nombreVisitante>
+								Barcelona
 							</nombreVisitante>
 							<puntuacion>
 								0
@@ -38,38 +58,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								b
+								MelburVC
 							</NombreLocal>
 							<puntuacion>
-								0
+								2
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								e
+								MilanVC
 							</nombreVisitante>
 							<puntuacion>
-								0
-							</puntuacion>
-						</equipo_visitante>
-					</equipos>
-				</partido>
-				<partido>
-					<equipos>
-						<equipo_local>
-							<NombreLocal>
-								c
-							</NombreLocal>
-							<puntuacion>
-								0
-							</puntuacion>
-						</equipo_local>
-						<equipo_visitante>
-							<nombreVisitante>
-								d
-							</nombreVisitante>
-							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -85,18 +85,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								f
+								Betis
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								d
+								MilanVC
 							</nombreVisitante>
 							<puntuacion>
-								0
+								1
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -105,18 +105,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								e
+								Barcelona
 							</NombreLocal>
 							<puntuacion>
-								0
+								2
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								c
+								MelburVC
 							</nombreVisitante>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -125,15 +125,15 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								a
+								Chelsea
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								b
+								Madrid
 							</nombreVisitante>
 							<puntuacion>
 								0
@@ -152,18 +152,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								b
+								Madrid
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								f
+								Betis
 							</nombreVisitante>
 							<puntuacion>
-								0
+								1
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -172,18 +172,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								c
+								MelburVC
 							</NombreLocal>
 							<puntuacion>
-								0
+								2
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								a
+								Chelsea
 							</nombreVisitante>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -192,18 +192,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								d
+								MilanVC
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								e
+								Barcelona
 							</nombreVisitante>
 							<puntuacion>
-								0
+								2
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -219,15 +219,15 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								f
+								Betis
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								e
+								Barcelona
 							</nombreVisitante>
 							<puntuacion>
 								0
@@ -239,18 +239,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								a
+								Chelsea
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								d
+								MilanVC
 							</nombreVisitante>
 							<puntuacion>
-								0
+								1
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -259,18 +259,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								b
+								Madrid
 							</NombreLocal>
 							<puntuacion>
-								0
+								2
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								c
+								MelburVC
 							</nombreVisitante>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -286,15 +286,15 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								c
+								MelburVC
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								f
+								Betis
 							</nombreVisitante>
 							<puntuacion>
 								0
@@ -306,18 +306,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								d
+								MilanVC
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								b
+								Madrid
 							</nombreVisitante>
 							<puntuacion>
-								0
+								2
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -326,15 +326,15 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								e
+								Barcelona
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								a
+								Chelsea
 							</nombreVisitante>
 							<puntuacion>
 								0
@@ -353,18 +353,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								f
+								Betis
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								a
+								Chelsea
 							</nombreVisitante>
 							<puntuacion>
-								0
+								1
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -373,18 +373,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								e
+								Barcelona
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								b
+								Madrid
 							</nombreVisitante>
 							<puntuacion>
-								0
+								2
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -393,15 +393,15 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								d
+								MilanVC
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								c
+								MelburVC
 							</nombreVisitante>
 							<puntuacion>
 								0
@@ -420,18 +420,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								d
+								MilanVC
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								f
+								Betis
 							</nombreVisitante>
 							<puntuacion>
-								0
+								2
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -440,18 +440,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								c
+								MelburVC
 							</NombreLocal>
 							<puntuacion>
-								0
+								2
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								e
+								Barcelona
 							</nombreVisitante>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -460,15 +460,15 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								b
+								Madrid
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								a
+								Chelsea
 							</nombreVisitante>
 							<puntuacion>
 								0
@@ -487,15 +487,15 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								f
+								Betis
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								b
+								Madrid
 							</nombreVisitante>
 							<puntuacion>
 								0
@@ -507,18 +507,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								a
+								Chelsea
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								c
+								MelburVC
 							</nombreVisitante>
 							<puntuacion>
-								0
+								1
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -527,15 +527,15 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								e
+								Barcelona
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								d
+								MilanVC
 							</nombreVisitante>
 							<puntuacion>
 								0
@@ -554,15 +554,35 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								e
+								Barcelona
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								f
+								Betis
+							</nombreVisitante>
+							<puntuacion>
+								2
+							</puntuacion>
+						</equipo_visitante>
+					</equipos>
+				</partido>
+				<partido>
+					<equipos>
+						<equipo_local>
+							<NombreLocal>
+								MilanVC
+							</NombreLocal>
+							<puntuacion>
+								3
+							</puntuacion>
+						</equipo_local>
+						<equipo_visitante>
+							<nombreVisitante>
+								Chelsea
 							</nombreVisitante>
 							<puntuacion>
 								0
@@ -574,38 +594,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								d
+								MelburVC
 							</NombreLocal>
 							<puntuacion>
-								0
+								2
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								a
+								Madrid
 							</nombreVisitante>
 							<puntuacion>
-								0
-							</puntuacion>
-						</equipo_visitante>
-					</equipos>
-				</partido>
-				<partido>
-					<equipos>
-						<equipo_local>
-							<NombreLocal>
-								c
-							</NombreLocal>
-							<puntuacion>
-								0
-							</puntuacion>
-						</equipo_local>
-						<equipo_visitante>
-							<nombreVisitante>
-								b
-							</nombreVisitante>
-							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -621,18 +621,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								f
+								Betis
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								c
+								MelburVC
 							</nombreVisitante>
 							<puntuacion>
-								0
+								1
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -641,18 +641,18 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								b
+								Madrid
 							</NombreLocal>
 							<puntuacion>
-								0
+								2
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								d
+								MilanVC
 							</nombreVisitante>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_visitante>
 					</equipos>
@@ -661,15 +661,15 @@
 					<equipos>
 						<equipo_local>
 							<NombreLocal>
-								a
+								Chelsea
 							</NombreLocal>
 							<puntuacion>
-								0
+								3
 							</puntuacion>
 						</equipo_local>
 						<equipo_visitante>
 							<nombreVisitante>
-								e
+								Barcelona
 							</nombreVisitante>
 							<puntuacion>
 								0
@@ -686,48 +686,870 @@
 				1
 			</posicion>
 			<nombre>
-				a
+				Chelsea
 			</nombre>
+			<puntosTotales>
+				24
+			</puntosTotales>
+			<jugadores>
+				<jugador>
+					<nombre>
+						Carlos Lopez
+					</nombre>
+					<edad>
+						29
+					</edad>
+					<posicion>
+						Armador
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Javier Torres
+					</nombre>
+					<edad>
+						26
+					</edad>
+					<posicion>
+						Opuesto
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Luis Martinez
+					</nombre>
+					<edad>
+						35
+					</edad>
+					<posicion>
+						Receptor 1
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Juan Perez
+					</nombre>
+					<edad>
+						29
+					</edad>
+					<posicion>
+						Receptor 2
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Antonio Gomez
+					</nombre>
+					<edad>
+						29
+					</edad>
+					<posicion>
+						Central
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Fernando Ruiz
+					</nombre>
+					<edad>
+						28
+					</edad>
+					<posicion>
+						Libero
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Manuel Diaz
+					</nombre>
+					<edad>
+						38
+					</edad>
+					<posicion>
+						Armador
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Sergio Sanchez
+					</nombre>
+					<edad>
+						27
+					</edad>
+					<posicion>
+						Opuesto
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						David Hernandez
+					</nombre>
+					<edad>
+						39
+					</edad>
+					<posicion>
+						Receptor 1
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Jorge Ramos
+					</nombre>
+					<edad>
+						26
+					</edad>
+					<posicion>
+						Receptor 2
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Raul Fernandez
+					</nombre>
+					<edad>
+						25
+					</edad>
+					<posicion>
+						Central
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Angel Gutierrez
+					</nombre>
+					<edad>
+						34
+					</edad>
+					<posicion>
+						Libero
+					</posicion>
+				</jugador>
+			</jugadores>
 		</equipo>
 		<equipo>
 			<posicion>
 				2
 			</posicion>
 			<nombre>
-				b
+				Madrid
 			</nombre>
+			<puntosTotales>
+				22
+			</puntosTotales>
+			<jugadores>
+				<jugador>
+					<nombre>
+						Mario Lopez
+					</nombre>
+					<edad>
+						30
+					</edad>
+					<posicion>
+						Armador
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Pedro Garcia
+					</nombre>
+					<edad>
+						26
+					</edad>
+					<posicion>
+						Opuesto
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Juan Gomez
+					</nombre>
+					<edad>
+						32
+					</edad>
+					<posicion>
+						Receptor 1
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Manuel Torres
+					</nombre>
+					<edad>
+						31
+					</edad>
+					<posicion>
+						Receptor 2
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Pablo Sanchez
+					</nombre>
+					<edad>
+						33
+					</edad>
+					<posicion>
+						Central
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						David Ruiz
+					</nombre>
+					<edad>
+						27
+					</edad>
+					<posicion>
+						Libero
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Alberto Herrera
+					</nombre>
+					<edad>
+						30
+					</edad>
+					<posicion>
+						Armador
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Rafael Moreno
+					</nombre>
+					<edad>
+						25
+					</edad>
+					<posicion>
+						Opuesto
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Lucas Castro
+					</nombre>
+					<edad>
+						34
+					</edad>
+					<posicion>
+						Receptor 1
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Andres Vega
+					</nombre>
+					<edad>
+						28
+					</edad>
+					<posicion>
+						Receptor 2
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Carlos Rojas
+					</nombre>
+					<edad>
+						31
+					</edad>
+					<posicion>
+						Central
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Victor Jimenez
+					</nombre>
+					<edad>
+						29
+					</edad>
+					<posicion>
+						Libero
+					</posicion>
+				</jugador>
+			</jugadores>
 		</equipo>
 		<equipo>
 			<posicion>
 				3
 			</posicion>
 			<nombre>
-				c
+				MelburVC
 			</nombre>
+			<puntosTotales>
+				20
+			</puntosTotales>
+			<jugadores>
+				<jugador>
+					<nombre>
+						Sergio Navarro
+					</nombre>
+					<edad>
+						30
+					</edad>
+					<posicion>
+						Armador
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Adrian Perez
+					</nombre>
+					<edad>
+						28
+					</edad>
+					<posicion>
+						Opuesto
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Jorge Medina
+					</nombre>
+					<edad>
+						31
+					</edad>
+					<posicion>
+						Receptor 1
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Luis Blanco
+					</nombre>
+					<edad>
+						33
+					</edad>
+					<posicion>
+						Receptor 2
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Antonio Ortega
+					</nombre>
+					<edad>
+						34
+					</edad>
+					<posicion>
+						Central
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Francisco Gil
+					</nombre>
+					<edad>
+						26
+					</edad>
+					<posicion>
+						Libero
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Angel Marin
+					</nombre>
+					<edad>
+						29
+					</edad>
+					<posicion>
+						Armador
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Miguel Serrano
+					</nombre>
+					<edad>
+						26
+					</edad>
+					<posicion>
+						Opuesto
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Ricardo Romero
+					</nombre>
+					<edad>
+						27
+					</edad>
+					<posicion>
+						Receptor 1
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Daniel Ponce
+					</nombre>
+					<edad>
+						26
+					</edad>
+					<posicion>
+						Receptor 2
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Ruben Campos
+					</nombre>
+					<edad>
+						28
+					</edad>
+					<posicion>
+						Central
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Ivan Alvarez
+					</nombre>
+					<edad>
+						29
+					</edad>
+					<posicion>
+						Libero
+					</posicion>
+				</jugador>
+			</jugadores>
 		</equipo>
 		<equipo>
 			<posicion>
 				4
 			</posicion>
 			<nombre>
-				d
+				MilanVC
 			</nombre>
+			<puntosTotales>
+				20
+			</puntosTotales>
+			<jugadores>
+				<jugador>
+					<nombre>
+						Oscar Vidal
+					</nombre>
+					<edad>
+						31
+					</edad>
+					<posicion>
+						Armador
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Marcos Villa
+					</nombre>
+					<edad>
+						30
+					</edad>
+					<posicion>
+						Opuesto
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Alejandro Moya
+					</nombre>
+					<edad>
+						34
+					</edad>
+					<posicion>
+						Receptor 1
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Enrique Cano
+					</nombre>
+					<edad>
+						29
+					</edad>
+					<posicion>
+						Receptor 2
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Hugo Cordero
+					</nombre>
+					<edad>
+						27
+					</edad>
+					<posicion>
+						Central
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Diego Marin
+					</nombre>
+					<edad>
+						28
+					</edad>
+					<posicion>
+						Libero
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Roberto Peña
+					</nombre>
+					<edad>
+						33
+					</edad>
+					<posicion>
+						Armador
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Victor Reyes
+					</nombre>
+					<edad>
+						27
+					</edad>
+					<posicion>
+						Opuesto
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Fernando Bravo
+					</nombre>
+					<edad>
+						31
+					</edad>
+					<posicion>
+						Receptor 1
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Alfonso Sanchez
+					</nombre>
+					<edad>
+						25
+					</edad>
+					<posicion>
+						Receptor 2
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Cristian Leon
+					</nombre>
+					<edad>
+						30
+					</edad>
+					<posicion>
+						Central
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Alfredo Campos
+					</nombre>
+					<edad>
+						32
+					</edad>
+					<posicion>
+						Libero
+					</posicion>
+				</jugador>
+			</jugadores>
 		</equipo>
 		<equipo>
 			<posicion>
 				5
 			</posicion>
 			<nombre>
-				e
+				Barcelona
 			</nombre>
+			<puntosTotales>
+				18
+			</puntosTotales>
+			<jugadores>
+				<jugador>
+					<nombre>
+						Jose Ortega
+					</nombre>
+					<edad>
+						31
+					</edad>
+					<posicion>
+						Armador
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Carlos Molina
+					</nombre>
+					<edad>
+						29
+					</edad>
+					<posicion>
+						Opuesto
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Luis Paredes
+					</nombre>
+					<edad>
+						33
+					</edad>
+					<posicion>
+						Receptor 1
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Mario Velasco
+					</nombre>
+					<edad>
+						28
+					</edad>
+					<posicion>
+						Receptor 2
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Ricardo Carrasco
+					</nombre>
+					<edad>
+						26
+					</edad>
+					<posicion>
+						Central
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Manuel Vidal
+					</nombre>
+					<edad>
+						30
+					</edad>
+					<posicion>
+						Libero
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Diego Navarro
+					</nombre>
+					<edad>
+						34
+					</edad>
+					<posicion>
+						Armador
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Jorge Palacios
+					</nombre>
+					<edad>
+						27
+					</edad>
+					<posicion>
+						Opuesto
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Adrian Dominguez
+					</nombre>
+					<edad>
+						26
+					</edad>
+					<posicion>
+						Receptor 1
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Victor Lopez
+					</nombre>
+					<edad>
+						32
+					</edad>
+					<posicion>
+						Receptor 2
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Angel Rios
+					</nombre>
+					<edad>
+						33
+					</edad>
+					<posicion>
+						Central
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Francisco Vargas
+					</nombre>
+					<edad>
+						28
+					</edad>
+					<posicion>
+						Libero
+					</posicion>
+				</jugador>
+			</jugadores>
 		</equipo>
 		<equipo>
 			<posicion>
 				6
 			</posicion>
 			<nombre>
-				f
+				Betis
 			</nombre>
+			<puntosTotales>
+				16
+			</puntosTotales>
+			<jugadores>
+				<jugador>
+					<nombre>
+						Alberto Guzman
+					</nombre>
+					<edad>
+						31
+					</edad>
+					<posicion>
+						Armador
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Miguel Varela
+					</nombre>
+					<edad>
+						30
+					</edad>
+					<posicion>
+						Opuesto
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Oscar Romero
+					</nombre>
+					<edad>
+						32
+					</edad>
+					<posicion>
+						Receptor 1
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Ruben Nieto
+					</nombre>
+					<edad>
+						30
+					</edad>
+					<posicion>
+						Receptor 2
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Andres Castaño
+					</nombre>
+					<edad>
+						28
+					</edad>
+					<posicion>
+						Central
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Hugo Santiago
+					</nombre>
+					<edad>
+						34
+					</edad>
+					<posicion>
+						Libero
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Pedro Vargas
+					</nombre>
+					<edad>
+						27
+					</edad>
+					<posicion>
+						Armador
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Samuel Ruiz
+					</nombre>
+					<edad>
+						25
+					</edad>
+					<posicion>
+						Opuesto
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Felipe Peña
+					</nombre>
+					<edad>
+						33
+					</edad>
+					<posicion>
+						Receptor 1
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Fernando Serrano
+					</nombre>
+					<edad>
+						26
+					</edad>
+					<posicion>
+						Receptor 2
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Raul Perez
+					</nombre>
+					<edad>
+						32
+					</edad>
+					<posicion>
+						Central
+					</posicion>
+				</jugador>
+				<jugador>
+					<nombre>
+						Ivan Martinez
+					</nombre>
+					<edad>
+						29
+					</edad>
+					<posicion>
+						Libero
+					</posicion>
+				</jugador>
+			</jugadores>
 		</equipo>
 	</clasificacion>
 </temporada>
