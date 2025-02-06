@@ -1,120 +1,38 @@
+#tituloContacto{
+    margin: 0.5em 0;
+}
 
-#tituloContacto {
-    width: 60%;
-}
-#tituloPatrocinadores{
-    width: 80%;
-}
-.contenedor-logos-patroc{
+.contactoPrincipal {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-    padding: 1em; /* Espaciado interno */
-  }
+    grid-template-columns: 1fr 1fr;
+    align-items: center; /* Vertically center the contents */
+    margin: 1em 10%;
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #fff;
-    line-height: 1.6;
 }
-.contacto-principal {
-    display: flex; /* Flexbox para alineación horizontal */
-    align-items: center; /* Centra verticalmente logo y texto */
-    gap: 2em; /* Espacio entre el logo y los datos */
-    color: #fff; /* Texto blanco */
-    padding: 2; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    margin: 20px auto; /* Centra el contenedor horizontalmente */
-    max-width: 800px; /* Ancho máximo del bloque */
-}
-.contacto-info{
-    padding: 1em;
-}
-.logo {
-    width: 130px; /* Tamaño del logo */
-    height: auto; /* Mantén las proporciones */
-}
-
-.info-principal {
-    font-size: 16px; /* Tamaño de letra */
-    line-height: 1.5; /* Espaciado entre líneas */
-}
-
-.info-principal a {
-    color: #fff; /* Color para los enlaces */
-    text-decoration: none; /* Quita el subrayado */
-}
-
-.info-principal a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
-}
-
-/* Títulos */
 h2 {
-    font-size: 2em; /* Tamaño del título */
-    color: #fff; /* Color del título */
-    text-align:left; /* Centrado */
-    text-align: left; /* Alineado a la izquierda */
-    margin-left: auto; /* Para que esté alineado con el contenedor */
-    margin-right: auto; /* Centrado horizontalmente para concidir con el contenedor */
-    max-width: 800px; /* Asegurarse de que coincida con el ancho del contenedor */
+    margin: 1em;
+    font-weight: bold;
 }
-
-.correos {
-    padding: 2; /* Espaciado interno */
-    border-radius: 15px; /* Bordes redondeados */
-    margin: 20px auto; /* Centra el contenedor horizontalmente */
-    max-width: 800px; /* Ancho máximo del bloque */
+.contactoCorreos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1em 10%;
 }
-
-.info-principal-correos {
-    display: flex; /* Alineación en fila */
-    justify-content: space-between; /* Espaciado uniforme */
-    gap: 20px; /* Espaciado entre columnas */
+.contactoPrincipal img {
+    width: 8em;
+    float: right;
+    margin-right: 1em;
 }
-
-.columna {
-    width: 55%; /* Ocupa la mitad del ancho del contenedor */
-}
-
-.columna p {
-    margin: 5px 0; /* Espaciado entre párrafos */
-}
-
-.contenedor-patrocinadores{
-    display: grid; /* Alineación */
-    grid-area: patrocinadores;
-    gap: 1em; /* Espacio entre el logo y los datos */
-    padding: 1em 0em 2em; /* Espaciado interno */
-  }
-
-  .contenedor-logos-patroc{
-    display: grid; /* Alineación */
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;  /* Espacio entre el logo y los datos */
-    padding: 1em; /* Espaciado interno */
-  }
-  
-  .logo-patroc {
-    object-fit: cover;
-    width: auto;
-    height: 8em;
-    background-image: url('../imagenes/patrocinadores/alsa.png');
-    background-size: contain; /* Asegura que la imagen se ajuste al tamaño del div */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen en el div */
-  }
-@media (min-width: 992px) {  
-
-    .contenedor-logos-patroc{
-        grid-template-columns: repeat(4,1fr);
-      }
-
-    #tituloPatrocinadores {
-        width: 50%;
+@media (max-width: 992px) {
+    .contactoPrincipal {
+        font-size: 0.8em;
+    
     }
-    #tituloContacto {
-        width: 50%;
+    .contactoPrincipal img {
+        width: 4em;
+    }
+    .contactoCorreos {
+        font-size: 0.8em;
+
     }
 }

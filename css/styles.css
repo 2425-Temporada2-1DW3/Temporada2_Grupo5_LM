@@ -83,7 +83,7 @@
 }
 
 .html{
-    height: 100vw;
+    height: 100%;
     width: inherit;
 }
 
@@ -109,7 +109,6 @@ a:visited {
 header{
     background-color:var(--bgColor1);
     height: 4em;
-    /* width: 100vw; */
     display: flex;
     grid-area: header;
     padding: 0.5em;
@@ -167,11 +166,34 @@ header{
 
 
 /* CONTENEDOR INDEX */
-.container{
-    background-color: var(--bgColor3);
-    height: auto;
-    grid-area: main;
-}
+    .container{
+        background-color: var(--bgColor3);
+        height: auto;
+        grid-area: main;
+    }
+
+
+
+    .sponsors{
+        background-color: var(--bgColor3);
+    }
+    #tituloSponsors{
+        width: 100%;
+    }
+    .contenidoSponsors img {
+        width: 100%;
+        padding: 2%;
+        transition: ease-in-out 0.5s;
+    } 
+
+    .contenidoSponsors{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1em 0.5em;
+        justify-items: center; /* Center the images horizontally */
+    }
+
+
 
  /*
 ███████  ██████   ██████  ████████ ███████ ██████  
@@ -311,6 +333,20 @@ header{
 
 /* Laptops y escritorios (mínimo 992px) */
 @media (min-width: 992px) {
+
+
+
+    .contenidoSponsors{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 1em 8%;
+        justify-items: center; /* Center the images horizontally */
+    }
+    .contenidoSponsors img {
+        width: 100%;
+        padding: 1em;
+        transition: ease-in-out 0.5s;
+    } 
     /*
     ██   ██ ███████  █████  ██████  ███████ ██████  
     ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 

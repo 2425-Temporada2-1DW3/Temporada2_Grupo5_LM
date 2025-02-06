@@ -9,14 +9,12 @@
       "patrocinadores"
   ;
 }
-.img-panoramica {
-  grid-area: banner;
-  background-image: url('../imagenes/noticias/noti4.jpg');
-  background-size: cover; /* Asegura que la imagen cubra completamente el contenedor */
-  background-position: center; /* Centra la imagen dentro del contenedor */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+.imagenFondo {
+  width: 100%;
+
 }
 .contenedor-noti-cale{
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: 
   "noticias"
@@ -89,29 +87,6 @@
     padding-right: 0em;
   }
 
-  .contenedor-patrocinadores{
-    display: grid;
-    grid-area: patrocinadores;
-    gap: 1em;
-    padding: 1em 0em 2em;
-  }
-
-  .contenedor-logos-patroc{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-    padding: 1em;
-  }
-  
-  .logo-patroc {
-    object-fit: cover;
-    width: auto;
-    height: 8em;
-    background-image: url('../imagenes/patrocinadores/alsa.png');
-    background-size: contain; /* Asegura que la imagen se ajuste al tamaño del div */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen en el div */
-  }
 
   
 @media (min-width: 992px) {
@@ -127,11 +102,7 @@
   }
 
   
-  .contenedor-logos-patroc{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding: 1em;
-  }
+
 
   #calendario {
     justify-content: end;

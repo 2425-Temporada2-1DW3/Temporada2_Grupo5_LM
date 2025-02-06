@@ -31,13 +31,11 @@ document.addEventListener('DOMContentLoaded', async function () {
     
           console.log(xmlFiles); // Ver en consola los archivos sin la extensión .xml
     
-          // Verificar si el contenedor "temporadas" existe, si no lo creamos
-          let temporadasContainer = document.getElementById('temporadasButton1');
+          let temporadasContainer = document.getElementById('temporadas');
     
           
     
           // Limpiar el contenedor de temporadas antes de agregar nuevos elementos
-          temporadasContainer.innerHTML = '';
     
           // Generar un div para cada archivo en xmlFiles
           xmlFiles.forEach((file, index) => {
@@ -48,6 +46,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             temporadaDiv.addEventListener('click', async function (e) {
               e.preventDefault(); // Prevenir el comportamiento por defecto
               await cargarEquipos(` ${file}.xml`); // Cargar el contenido del archivo XML
+              console.log(`Cargando archivo: ${file}.xml`); // Depuración
+              
             });
     
             // Crear el botón y enlace con la estructura deseada
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           // Si hay archivos XML, cargar automáticamente el primero
           if (xmlFiles.length > 0) {
             console.log(`Cargando automáticamente el archivo: ${xmlFiles[0]}`);
-            await loadXMLContent(xmlFiles[0]); // Cargar automáticamente el primer archivo
+            await cargarEquipos(`${xmlFiles[0]}.xml`); // Cargar automáticamente el primer archivo
           }
     
         } catch (error) {
@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     
     }
+    
     async function cargarEquipos(filename){
         filename = filename.trim();
 
@@ -90,58 +91,102 @@ document.addEventListener('DOMContentLoaded', async function () {
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(xmlText, "application/xml");
 
-        // Get all "equipo" elements
-        const equipos = xmlDoc.querySelectorAll("temporada > clasificacion > equipo");
-        
+
         // Create an array to store all "nombre" values
         const nombresEquipos = [];
 
-        // Loop through each "equipo" and get its "nombre"
+        // Borrar elementos existentes en el contenedor 
+        const equiposContenido = document.getElementById("equiposContenido");
+        const tituloJugadores = document.getElementById("tituloJugadores");
+
+        if (equiposContenido) {
+          equiposContenido.innerHTML = ""; // Clears existing content
+        }
+        // cojer todos los equipos
+        const equipos = xmlDoc.querySelectorAll("temporada > clasificacion > equipo");
+        // leer cada equipo y crear el boton
         equipos.forEach((equipo) => {
             const nombre = equipo.querySelector("nombre");
             if (nombre) {
-                // Create the div with class "equipo"
-                const equipoDiv = document.createElement("div");
-                equipoDiv.classList.add("equipo");
 
-                // Create the inner div with class "montserrat"
-                const montserratDiv = document.createElement("div");
-                montserratDiv.classList.add("montserrat");
+              // Div Principal
+              const equipoDiv = document.createElement("div");
+              equipoDiv.classList.add("equipo");
 
-                // Create the img element
-                const img = document.createElement("img");
-                img.classList.add("equipoImg");
-                img.src = "/imagenes/logos/logo.png"; // Replace with actual image source if needed
-                img.alt = "Equipo Logo";
+              // Div para la foto y nombre de equipo
+              const divBtn = document.createElement("div");
+              divBtn.classList.add("montserrat");
 
-                // Append the image and name to the "montserrat" div
-                montserratDiv.appendChild(img);
-                montserratDiv.appendChild(document.createTextNode(nombre.textContent)); // Replace nombre
+              // Imagen del equipo
+              const img = document.createElement("img");
+              img.classList.add("equipoImg");
+              img.src = "/imagenes/logos/logo.png"; // SE necesita path de la imagen en el XML
 
-                // Create the ul element
-                const ul = document.createElement("ul");
+              // Boton del equipo
+              divBtn.appendChild(img);
+              divBtn.appendChild(document.createTextNode(nombre.textContent));
 
-                // Add "Fundacion" and "Entrenador" list items
-                const fundacionLi = document.createElement("li");
-                fundacionLi.textContent = "Fundacion";
-                ul.appendChild(fundacionLi);
+              divBtn.addEventListener("click", function() {
+                tituloJugadores.innerHTML = "JUGADORES DEL " + nombre.textContent.toUpperCase();
+                cargarJugadores(equipo);
+              });
 
-                const entrenadorLi = document.createElement("li");
-                entrenadorLi.textContent = "Entrenador";
-                ul.appendChild(entrenadorLi);
+              equipoDiv.appendChild(divBtn);
 
-                // Append the "montserrat" div and "ul" to the "equipo" div
-                equipoDiv.appendChild(montserratDiv);
-                equipoDiv.appendChild(ul);
-
-                // Append the "equipo" div to the "equipos" container
-                const equiposContainer = document.getElementById("equipos");
-                if (equiposContainer) {
-                    equiposContainer.appendChild(equipoDiv);
-                }
+              equiposContenido.appendChild(equipoDiv);
+              
             }
         });
-        console.log(nombresEquipos); // Print the parsed XML document
+        cargarJugadores(equipos[0]);
+        const nombre = equipos[0].querySelector("nombre");
+        tituloJugadores.innerHTML = "JUGADORES DEL " + nombre.textContent.toUpperCase();
+
+
     }
     
+    async function cargarJugadores(equipo) {
+      const jugadores = equipo.querySelectorAll("jugadores jugador");
+      const tablaContenido = document.getElementById("tablaContenido");
+      
+      if (tablaContenido) {
+        const rows = tablaContenido.querySelectorAll("tr");
+        // quitar todos los trs menos el primero
+        for (let i = rows.length - 1; i > 0; i--) {
+            rows[i].remove();
+        }
+      }
+      jugadores.forEach((jugador) => {
+        const nombre = jugador.querySelector("nombre")?.textContent.trim();
+        const edad = jugador.querySelector("edad")?.textContent.trim();
+        const posicion = jugador.querySelector("posicion")?.textContent.trim();
+        //const imgpath = jugador.querySelector("foto")?.textContent.trim();
+
+        const tableRow = document.createElement("tr");
+
+        // Columna NOMBRE
+        const tableColum1 = document.createElement("td");
+        tableColum1.innerHTML = nombre;        
+        tableRow.appendChild(tableColum1);
+
+        // Columna IMAGEN
+        const tableColum2 = document.createElement("td");
+        const img = document.createElement("img");
+        img.src = "/imagenes/logos/logo.png"; // SE necesita path de la imagen en el XML
+        tableColum2.appendChild(img);          
+        tableRow.appendChild(tableColum2);
+
+        // Columna EDAD
+        const tableColum3 = document.createElement("td");
+        tableColum3.innerHTML = edad;        
+        tableRow.appendChild(tableColum3);
+
+        // Columna POSICION
+        const tableColum4 = document.createElement("td");
+        tableColum4.innerHTML = posicion;        
+        tableRow.appendChild(tableColum4);
+
+        tablaContenido.appendChild(tableRow);
+
+      });
+    }
 }); 
