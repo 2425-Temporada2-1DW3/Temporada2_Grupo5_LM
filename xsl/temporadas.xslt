@@ -20,7 +20,7 @@
           </td>
           <td class="logoContainer">
             <!-- Mostrar el logo del equipo -->
-            <img src="./imagenes/logos/logo.png" />
+            <img src="{concat('./imagenes/equipos/', normalize-space(idFotoEquipo), '.png')}" />
           </td>
           <td>
             <!-- Nombre del equipo -->

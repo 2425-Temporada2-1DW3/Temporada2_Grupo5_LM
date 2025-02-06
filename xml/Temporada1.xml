@@ -1,4 +1,5 @@
-<temporada>
+<temporada  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Temporada1.xsd">
 	<nombre>
 		Temporada1
 	</nombre>
@@ -682,6 +683,9 @@
 	</jornadas>
 	<clasificacion>
 		<equipo>
+			<idFotoEquipo>
+				D1
+			</idFotoEquipo>
 			<posicion>
 				1
 			</posicion>
@@ -702,6 +706,9 @@
 					<posicion>
 						Armador
 					</posicion>
+					<idFoto>
+						A1
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -713,6 +720,9 @@
 					<posicion>
 						Opuesto
 					</posicion>
+					<idFoto>
+						A2
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -724,6 +734,9 @@
 					<posicion>
 						Receptor 1
 					</posicion>
+					<idFoto>
+						A3
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -735,6 +748,9 @@
 					<posicion>
 						Receptor 2
 					</posicion>
+					<idFoto>
+						A4
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -746,6 +762,9 @@
 					<posicion>
 						Central
 					</posicion>
+					<idFoto>
+						A5
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -757,6 +776,9 @@
 					<posicion>
 						Libero
 					</posicion>
+					<idFoto>
+						A6
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -768,6 +790,9 @@
 					<posicion>
 						Armador
 					</posicion>
+					<idFoto>
+						A7
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -779,6 +804,9 @@
 					<posicion>
 						Opuesto
 					</posicion>
+					<idFoto>
+						A8
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -790,6 +818,9 @@
 					<posicion>
 						Receptor 1
 					</posicion>
+					<idFoto>
+						A9
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -801,6 +832,9 @@
 					<posicion>
 						Receptor 2
 					</posicion>
+					<idFoto>
+						A10
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -812,6 +846,9 @@
 					<posicion>
 						Central
 					</posicion>
+					<idFoto>
+						A11
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -823,10 +860,16 @@
 					<posicion>
 						Libero
 					</posicion>
+					<idFoto>
+						A12
+					</idFoto>
 				</jugador>
 			</jugadores>
 		</equipo>
 		<equipo>
+			<idFotoEquipo>
+				A1
+			</idFotoEquipo>
 			<posicion>
 				2
 			</posicion>
@@ -847,6 +890,9 @@
 					<posicion>
 						Armador
 					</posicion>
+					<idFoto>
+						B1
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -858,6 +904,9 @@
 					<posicion>
 						Opuesto
 					</posicion>
+					<idFoto>
+						B2
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -869,6 +918,9 @@
 					<posicion>
 						Receptor 1
 					</posicion>
+					<idFoto>
+						B3
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -880,6 +932,9 @@
 					<posicion>
 						Receptor 2
 					</posicion>
+					<idFoto>
+						B4
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -891,6 +946,9 @@
 					<posicion>
 						Central
 					</posicion>
+					<idFoto>
+						B5
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -902,6 +960,9 @@
 					<posicion>
 						Libero
 					</posicion>
+					<idFoto>
+						B6
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -913,6 +974,9 @@
 					<posicion>
 						Armador
 					</posicion>
+					<idFoto>
+						B7
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -924,6 +988,9 @@
 					<posicion>
 						Opuesto
 					</posicion>
+					<idFoto>
+						B8
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -935,6 +1002,9 @@
 					<posicion>
 						Receptor 1
 					</posicion>
+					<idFoto>
+						B9
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -946,6 +1016,9 @@
 					<posicion>
 						Receptor 2
 					</posicion>
+					<idFoto>
+						B10
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -957,6 +1030,9 @@
 					<posicion>
 						Central
 					</posicion>
+					<idFoto>
+						B11
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -968,10 +1044,16 @@
 					<posicion>
 						Libero
 					</posicion>
+					<idFoto>
+						B12
+					</idFoto>
 				</jugador>
 			</jugadores>
 		</equipo>
 		<equipo>
+			<idFotoEquipo>
+				E1
+			</idFotoEquipo>
 			<posicion>
 				3
 			</posicion>
@@ -992,6 +1074,9 @@
 					<posicion>
 						Armador
 					</posicion>
+					<idFoto>
+						C1
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1003,6 +1088,9 @@
 					<posicion>
 						Opuesto
 					</posicion>
+					<idFoto>
+						C2
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1014,6 +1102,9 @@
 					<posicion>
 						Receptor 1
 					</posicion>
+					<idFoto>
+						C3
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1025,6 +1116,9 @@
 					<posicion>
 						Receptor 2
 					</posicion>
+					<idFoto>
+						C4
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1036,6 +1130,9 @@
 					<posicion>
 						Central
 					</posicion>
+					<idFoto>
+						C5
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1047,6 +1144,9 @@
 					<posicion>
 						Libero
 					</posicion>
+					<idFoto>
+						C6
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1058,6 +1158,9 @@
 					<posicion>
 						Armador
 					</posicion>
+					<idFoto>
+						C7
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1069,6 +1172,9 @@
 					<posicion>
 						Opuesto
 					</posicion>
+					<idFoto>
+						C8
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1080,6 +1186,9 @@
 					<posicion>
 						Receptor 1
 					</posicion>
+					<idFoto>
+						C9
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1091,6 +1200,9 @@
 					<posicion>
 						Receptor 2
 					</posicion>
+					<idFoto>
+						C10
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1102,6 +1214,9 @@
 					<posicion>
 						Central
 					</posicion>
+					<idFoto>
+						C11
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1113,10 +1228,16 @@
 					<posicion>
 						Libero
 					</posicion>
+					<idFoto>
+						C12
+					</idFoto>
 				</jugador>
 			</jugadores>
 		</equipo>
 		<equipo>
+			<idFotoEquipo>
+				F1
+			</idFotoEquipo>
 			<posicion>
 				4
 			</posicion>
@@ -1137,6 +1258,9 @@
 					<posicion>
 						Armador
 					</posicion>
+					<idFoto>
+						D1
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1148,6 +1272,9 @@
 					<posicion>
 						Opuesto
 					</posicion>
+					<idFoto>
+						D2
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1159,6 +1286,9 @@
 					<posicion>
 						Receptor 1
 					</posicion>
+					<idFoto>
+						D3
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1170,6 +1300,9 @@
 					<posicion>
 						Receptor 2
 					</posicion>
+					<idFoto>
+						D4
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1181,6 +1314,9 @@
 					<posicion>
 						Central
 					</posicion>
+					<idFoto>
+						D5
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1192,6 +1328,9 @@
 					<posicion>
 						Libero
 					</posicion>
+					<idFoto>
+						D6
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1203,6 +1342,9 @@
 					<posicion>
 						Armador
 					</posicion>
+					<idFoto>
+						D7
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1214,6 +1356,9 @@
 					<posicion>
 						Opuesto
 					</posicion>
+					<idFoto>
+						D8
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1225,6 +1370,9 @@
 					<posicion>
 						Receptor 1
 					</posicion>
+					<idFoto>
+						D9
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1236,6 +1384,9 @@
 					<posicion>
 						Receptor 2
 					</posicion>
+					<idFoto>
+						D10
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1247,6 +1398,9 @@
 					<posicion>
 						Central
 					</posicion>
+					<idFoto>
+						D11
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1258,10 +1412,16 @@
 					<posicion>
 						Libero
 					</posicion>
+					<idFoto>
+						D12
+					</idFoto>
 				</jugador>
 			</jugadores>
 		</equipo>
 		<equipo>
+			<idFotoEquipo>
+				B1
+			</idFotoEquipo>
 			<posicion>
 				5
 			</posicion>
@@ -1282,6 +1442,9 @@
 					<posicion>
 						Armador
 					</posicion>
+					<idFoto>
+						E1
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1293,6 +1456,9 @@
 					<posicion>
 						Opuesto
 					</posicion>
+					<idFoto>
+						E2
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1304,6 +1470,9 @@
 					<posicion>
 						Receptor 1
 					</posicion>
+					<idFoto>
+						E3
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1315,6 +1484,9 @@
 					<posicion>
 						Receptor 2
 					</posicion>
+					<idFoto>
+						E4
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1326,6 +1498,9 @@
 					<posicion>
 						Central
 					</posicion>
+					<idFoto>
+						E5
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1337,6 +1512,9 @@
 					<posicion>
 						Libero
 					</posicion>
+					<idFoto>
+						E6
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1348,6 +1526,9 @@
 					<posicion>
 						Armador
 					</posicion>
+					<idFoto>
+						E7
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1359,6 +1540,9 @@
 					<posicion>
 						Opuesto
 					</posicion>
+					<idFoto>
+						E8
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1370,6 +1554,9 @@
 					<posicion>
 						Receptor 1
 					</posicion>
+					<idFoto>
+						E9
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1381,6 +1568,9 @@
 					<posicion>
 						Receptor 2
 					</posicion>
+					<idFoto>
+						E10
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1392,6 +1582,9 @@
 					<posicion>
 						Central
 					</posicion>
+					<idFoto>
+						E11
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1403,10 +1596,16 @@
 					<posicion>
 						Libero
 					</posicion>
+					<idFoto>
+						E12
+					</idFoto>
 				</jugador>
 			</jugadores>
 		</equipo>
 		<equipo>
+			<idFotoEquipo>
+				C1
+			</idFotoEquipo>
 			<posicion>
 				6
 			</posicion>
@@ -1427,6 +1626,9 @@
 					<posicion>
 						Armador
 					</posicion>
+					<idFoto>
+						F1
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1438,6 +1640,9 @@
 					<posicion>
 						Opuesto
 					</posicion>
+					<idFoto>
+						F2
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1449,6 +1654,9 @@
 					<posicion>
 						Receptor 1
 					</posicion>
+					<idFoto>
+						F3
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1460,6 +1668,9 @@
 					<posicion>
 						Receptor 2
 					</posicion>
+					<idFoto>
+						F4
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1471,6 +1682,9 @@
 					<posicion>
 						Central
 					</posicion>
+					<idFoto>
+						F5
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1482,6 +1696,9 @@
 					<posicion>
 						Libero
 					</posicion>
+					<idFoto>
+						F6
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1493,6 +1710,9 @@
 					<posicion>
 						Armador
 					</posicion>
+					<idFoto>
+						F7
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1504,6 +1724,9 @@
 					<posicion>
 						Opuesto
 					</posicion>
+					<idFoto>
+						F8
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1515,6 +1738,9 @@
 					<posicion>
 						Receptor 1
 					</posicion>
+					<idFoto>
+						F9
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1526,6 +1752,9 @@
 					<posicion>
 						Receptor 2
 					</posicion>
+					<idFoto>
+						F10
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1537,6 +1766,9 @@
 					<posicion>
 						Central
 					</posicion>
+					<idFoto>
+						F11
+					</idFoto>
 				</jugador>
 				<jugador>
 					<nombre>
@@ -1548,6 +1780,9 @@
 					<posicion>
 						Libero
 					</posicion>
+					<idFoto>
+						F12
+					</idFoto>
 				</jugador>
 			</jugadores>
 		</equipo>

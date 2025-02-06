@@ -111,6 +111,11 @@ document.addEventListener('DOMContentLoaded', async function () {
 
               // Div Principal
               const equipoDiv = document.createElement("div");
+              let imgpath = equipo.querySelector("idFotoEquipo")?.textContent.trim();
+              if (imgpath == null) {
+                imgpath = "idFotodefault";
+              }
+
               equipoDiv.classList.add("equipo");
 
               // Div para la foto y nombre de equipo
@@ -120,7 +125,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               // Imagen del equipo
               const img = document.createElement("img");
               img.classList.add("equipoImg");
-              img.src = "/imagenes/logos/logo.png"; // SE necesita path de la imagen en el XML
+
+              
+              img.src = "/imagenes/equipos/"+imgpath+".png"; // SE necesita path de la imagen en el XML
 
               // Boton del equipo
               divBtn.appendChild(img);
@@ -159,8 +166,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         const nombre = jugador.querySelector("nombre")?.textContent.trim();
         const edad = jugador.querySelector("edad")?.textContent.trim();
         const posicion = jugador.querySelector("posicion")?.textContent.trim();
-        //const imgpath = jugador.querySelector("foto")?.textContent.trim();
-
+        let imgpath = jugador.querySelector("idFoto")?.textContent.trim();
+        if (imgpath == null) {
+            imgpath = "idFotodefault";
+        }
+        console.log(imgpath);
         const tableRow = document.createElement("tr");
 
         // Columna NOMBRE
@@ -171,7 +181,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // Columna IMAGEN
         const tableColum2 = document.createElement("td");
         const img = document.createElement("img");
-        img.src = "/imagenes/logos/logo.png"; // SE necesita path de la imagen en el XML
+        img.src = "/imagenes/jugadores/"+imgpath+".png"; // SE necesita path de la imagen en el XML
         tableColum2.appendChild(img);          
         tableRow.appendChild(tableColum2);
 
