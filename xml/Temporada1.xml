@@ -1,5 +1,5 @@
-<temporada  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="Temporada1.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<temporada  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Temporada.xsd">
 	<nombre>
 		Temporada1
 	</nombre>
@@ -11,7 +11,7 @@
 	</finalizado>
 	<jornadas>
 		<jornada>
-			<id_jornada>
+			<id_jornada> 
 				0
 			</id_jornada>
 			<partidos>
